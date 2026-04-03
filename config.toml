@@ -5,6 +5,7 @@ compile_sass = true
 minify_html = true
 build_search_index = true
 generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
 author = "P. Moss Drouin"
 theme = "duckquill"
 default_language = "en"
@@ -29,7 +30,6 @@ index_format = "elasticlunr_json"
 
 [extra]
 styles = ["custom-fonts.css"]
-feed_filenames = ["atom.xml", "rss.xml"]
 
 # Which theme should be used by default (light/dark).
 default_theme = "light"
