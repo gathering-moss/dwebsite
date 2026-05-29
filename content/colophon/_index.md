@@ -4,10 +4,10 @@ title = "Colophon"
 +++
 
 <aside>
-    90% human-led, 10% AI assistance
+    90% human-led, 10% AI assisted
 </aside>
 
-Thanks to a stellar theme, I was able to do the heavy lifting (writing, decision-making, implementation), only using AI for troubleshooting and guidance.
+Thanks to a stellar theme, I was able to do the heavy lifting (writing, decision-making, implementation), and only sed AI for troubleshooting and guidance.
 
 ### Site
 * Theme: [Duckquill](https://duckquill.daudix.one) by [David Lapshin](https://daudix.one)
