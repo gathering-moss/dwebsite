@@ -29,7 +29,7 @@ This is another paragraph. You can have **bold text**, *italic text*, ***bold an
 
 ## Emphasis and Links
 
-Here's a [link to Google](https://google.com) and here's one to an [internal page](@/blog/_index.md).
+Here's a [link to Google](https://google.com) and here's one to an [internal page](@/writings/_index.md).
 
 You can also use **strong emphasis** and *regular emphasis* throughout your text.
 

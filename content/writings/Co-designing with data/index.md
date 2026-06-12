@@ -2,10 +2,16 @@
 title = "Co-designing with data"
 description = "From ambiguous data to clear direction."
 date = 2026-03-12
-draft = true
+[taxonomies]
+tags = ["Research, Design"]
+[extra] 
+banner = "banner.png" 
+toc = true 
+toc_inline = true 
+toc_ordered = true
 +++
 
-![[banner.png|Screenshot of a portion of the presentation deck used with stakeholders. It says “Enhanced Military Information Research Findings and has the VA seal centered at the top.]]
+![Screenshot of a portion of the presentation deck used with stakeholders. It says “Enhanced Military Information Research Findings and has the VA seal centered at the top.](static/banner.png)
 
 # From ambiguous data to clear direction
 
@@ -14,7 +20,7 @@ draft = true
 ### The problem
 The VA had a hunch that surfacing military service history in veterans' profiles could help them connect their service to disability claims, but no one understood how this data would actually appear to veterans or what impact it would have. The team had access to the underlying data structure, but couldn't visualize what veterans would see, much less whether the data was even accurate or useful.
 
-![[goals.png|Screenshot of a presentation slide that lists the research goals of this study: gain a better understanding of veterans’ mental models, review data with veterans, and gather feedback on design mockup.]]
+![Screenshot of a presentation slide that lists the research goals of this study: gain a better understanding of veterans’ mental models, review data with veterans, and gather feedback on design mockup.](static/goals.png)
 
 ### The users
 16 veterans across all six military branches (Air Force, Army, Coast Guard, Marine Corps, Navy, Space Force), with varying service lengths, ranks, and service types. All had filed disability claims. 50% had filed PACT Act claims; 50% had served overseas. Participants ranged from ages 25–65+, with diverse education levels and geographic locations (5 urban, 11 rural).
@@ -26,11 +32,11 @@ The VA had a hunch that surfacing military service history in veterans' profiles
 
 I conducted 16 semi-structured interviews with veterans, walked through their actual production data to validate accuracy, and used a mental model mapping activity to understand their priorities. 
 
-![[methodology.png|Screenshot of a presentation slide that has a table. The first column lists the research question, and the second column lists the corresponding research method meant to answer each question.]]
+![Screenshot of a presentation slide that has a table. The first column lists the research question, and the second column lists the corresponding research method meant to answer each question.](static/methodology.png)
 
 Rather than showing wireframes, I partnered with our backend engineer to pull real VADIR data, convert JSON to CSV, and visualize it on Mural boards so veterans could validate it themselves—centering them as experts in their own experience.
 
-![[walkthrough.png|Screenshot of a presentation slide showing the second part of the research session: a mural board with tons of stickies, as well as names for the data points, like deployment and academy episodes.]]
+![Screenshot of a presentation slide showing the second part of the research session: a mural board with tons of stickies, as well as names for the data points, like deployment and academy episodes.](static/walkthrough.png)
 
 ### Key findings
 - **Location > MOS for disability claims**: When connecting service to medical issues, location context was more useful than MOS alone
@@ -51,7 +57,7 @@ I presented this not as "data is broken" but as "here's what we can safely ship 
 ### Solution validation
 Validation happened in real time during research sessions. Veterans validated their own data, articulated their priorities, *then* evaluated a mockup against those priorities. This meant feedback was grounded in their actual needs, not abstract preferences.
 
-![[mockup.png|Screenshot of a presentation slide depicting two design mock-ups side by side. The First is Military Information in a veteran user’s profile with a button to “see details”. The second is the details expanded.]]
+![Screenshot of a presentation slide depicting two design mock-ups side by side. The First is Military Information in a veteran user’s profile with a button to “see details”. The second is the details expanded.](static/mockup.png)
 ## Final Design
 
 ### Design solutions
@@ -109,7 +115,3 @@ Recommending *against* MOS implementation was only possible because I had data t
 > 
 > **[Stakeholder readout](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/Research/2024-01-military-info-enhancement-mvp/research-readout.pdf)**
 > This is the research readout I did for the VEO stakeholders. I don’t typically add my speaker notes to presentation pdfs, but even in PPT form, the information is dense, and I wanted each slide to stand alone. This came in handy when the stakeholders asked for my research artifacts as they were ready to discuss and approve my recommendations.
-
-
-
-

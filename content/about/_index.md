@@ -24,6 +24,18 @@ I've worked across **startups, nonprofits, and government agencies,** and produc
 
 I'm also comfortable with code (HTML, CSS, JavaScript, Python, R) and design tools (Figma, Sketch), which helps me work effectively with engineering teams and understand technical constraints.
 
+## Underlying patterns
+
+There's a throughline across startups, nonprofits, and government agencies, whether I'm researching policy tools or designing community features. That throughline is consistently absorbing fragmented information, identifying what's missing or unclear, connecting people and ideas across silos, and helping teams think more clearly before decisions get locked in.
+
+I'm most energized when:
+
+* Teams are still figuring things out (not executing from a finished plan)
+* Learning actually informs decisions (not just justifying them)
+* There's enough flexibility to shape the path forward together
+
+I also work best in environments with real trust, clear expectations, and thoughtful collaborators. My goal is always to leave teams stronger than I found them, no matter what they need. It can look like building research capability they can run themselves, coaching others through complex analysis, or operationalizing systems that outlast my time there.
+
 ## When I'm not working
 
 If I'm outside, I'm probably birdwatching (I have a particular fondness for backyard birds). 
@@ -37,7 +49,7 @@ There's a lot to learn from our neighbors and our shared history.
 ## Reach out
 
 <aside>
-    <a class="external" href="https://example.org">Contact form</a>
+    <a class="external" href="https://formspree.io/f/mwvwklgz">Contact form</a>
 </aside>
 
 <mark>Current status:</mark> actively seeking full-time work and am also open to contract/freelance projects. 

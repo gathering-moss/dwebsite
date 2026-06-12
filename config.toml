@@ -117,6 +117,7 @@ links = [
 	{ name = "Links", menu = [
 		{ url = "@/about/_index.md", name = "About" },
 		{ url = "@/work/_index.md", name = "Work" },
+		{ url = "@/writings/_index.md", name = "Case studies" },
 		{ url = "@/colophon/_index.md", name = "Colophon"},
 		{ url = "@/contact/_index.md", name = "Contact"}
 	] }
@@ -127,7 +128,9 @@ links = [
 links = [
 	{ url = "@/about/_index.md", name = "About" },
 	{ url = "@/work/_index.md", name = "Work" },
-	{ url = "@/colophon/_index.md", name = "Colophon"}
+	{ url = "@/writings/_index.md", name = "Case studies" },
+	{ url = "@/colophon/_index.md", name = "Colophon"},
+	{ url = "@/contact/_index.md", name = "Contact"}
 ]
 
 # Social links

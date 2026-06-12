@@ -21,4 +21,4 @@ I started my career in library science _organizing knowledge systems and service
 
 ## Reach out
 
-<mark>Current status (Q2 2026):</mark> actively seeking full-time work and am also open to contract and freelance projects. If you think we'd work well together, I'd love to hear from you via my <a class="external" href="https://folio.drouin.website/contact/">contact form</a>.
+<mark>Current status (Q2 2026):</mark> actively seeking full-time work and am also open to contract and freelance projects. If you think we'd work well together, I'd love to hear from you via my <a href="https://folio.drouin.website/contact/">contact form</a>.

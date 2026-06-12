@@ -1,16 +1,22 @@
 +++
 title = "Computer-Aided Tagging: Designing for Community Trust"
-description = "Drafted post, very drafty."
+description = "Transforming metadata capabilities with and for a global community."
 date = 2026-03-12
-draft = true
+[taxonomies]
+tags = ["Research, Design"]
+[extra] 
+banner = "banner.png" 
+toc = true 
+toc_inline = true 
+toc_ordered = true
 +++
 
 # Computer-Aided Tagging: Designing for Community Trust
 
-![[commons.png]]
+![](static/commons.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>Screenshot of the Wikimedia Commons homepage.</figcaption>
 </figure>
 
 ## Overview
@@ -19,16 +25,16 @@ Wikimedia Commons hosts nearly 140 million freely licensed educational media fil
 
 The Alfred P. Sloan Foundation recognized this challenge and awarded Wikimedia Foundation a $3 million grant to transform Commons into a modern, machine-readable platform. The Structured Data on Commons (SDC) project was a three-year initiative to create infrastructure that would enable the global volunteer community to add, edit, and search media using structured metadata.
 
-- ![[wikidata-data-model.png]]
+- ![](static/wikidata-data-model.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>Wikidata's data model.</figcaption>
 </figure>
 
-- ![[data.png]]
+- ![](static/data.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>Example of what data items will live where.</figcaption>
 </figure>
 
 By 2019, the project had successfully created the technical foundation. Now came the next challenge: how do we help millions of volunteers actually *use* this infrastructure to add metadata to files?
@@ -56,10 +62,10 @@ The senior design researcher and I conducted extensive generative research with 
 
 ### Key Findings
 
-![[user-flow.png]]
+![](static/user-flow.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>User flow of one of the primary personas.</figcaption>
 </figure>
 
 Three critical insights emerged from this research:
@@ -92,16 +98,16 @@ I created interactive prototypes in Sketch and worked closely with developers to
 - **Testing with new users:** Using UserTesting.com, I tested designs with people unfamiliar with Commons to ensure the interface was accessible to casual contributors.
 - **Community consultations:** I facilitated open feedback sessions where I presented design concepts and gathered input on everything from interface layouts to terminology choices.
 
-![[tag-icons.png]]
+![](static/tag-icons.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>Icon explorations for "tags."</figcaption>
 </figure>
 
-![[tag-interactions.png]]
+![](static/tag-interactions.png)
 
 <figure>
-  <figcaption>caption</figcaption>
+  <figcaption>Example of tag interactions.</figcaption>
 </figure>
 
 ### Key Design Decisions
@@ -131,34 +137,25 @@ I designed the interface to work on mobile devices, recognizing that many commun
 
 No personal information (IP addresses, usernames) was sent to the computer vision provider. All suggestions were stored separately until human confirmation. This addressed community concerns about data privacy and corporate involvement.
 
-- ![[6-empty state-mobile.png]]
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
 
 
-- ![[1-Onboarding-mobile.png]]
+  <figure>
+    <img src="static/2-Suggested-tags-mobile.png" alt="Suggested tags">
+    <figcaption>Computer-suggested tags.</figcaption>
+  </figure>
 
-<figure>
-  <figcaption>caption</figcaption>
-</figure>
+  <figure>
+    <img src="static/4-Reviewed-tags-mobile.png" alt="Reviewed tags">
+    <figcaption>Human-chosen tags.</figcaption>
+  </figure>
 
-- ![[2-Suggested tags-mobile.png]]
+  <figure>
+    <img src="static/6-empty-state-mobile.png" alt="Empty state">
+    <figcaption>End of flow confirmation.</figcaption>
+  </figure>
 
-<figure>
-  <figcaption>caption</figcaption>
-</figure>
-
-- ![[3-Zooming in-mobile.png]]
-
-<figure>
-  <figcaption>caption</figcaption>
-</figure>
-
-- ![[4-Reviewed tags-mobile.png]]
-
-<figure>
-  <figcaption>caption</figcaption>
-</figure>
-
-- ![[5-Confirm tags-mobile.png]]
+</div>
 
 ## Results: Enabling Community Contribution at Scale
 

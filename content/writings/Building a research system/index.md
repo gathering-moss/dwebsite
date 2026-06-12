@@ -2,12 +2,18 @@
 title = "Research systems"
 description = "Implementing research systems that scale."
 date = 2026-03-12
-draft = true
+[taxonomies]
+tags = ["Research, Design"]
+[extra] 
+banner = "banner.png" 
+toc = true 
+toc_inline = true 
+toc_ordered = true
 +++
 
 # Implementing research systems that scale
 
-![[eregs-product.png|Screenshot of the Medicaid & CHIP eRegulations tool homepage. The header displays 'Medicaid & CHIP eRegulations' in teal text on the left, with a 'Search Regulations' box on the right. Below is a teal banner containing navigation and search features: a 'Jump to Regulation Section' input field with a dropdown showing '§ 400' and a 'Go' button. Below are links to Title 42 - Public Health, Chapter 4, and Subchapters A - General Provisions and Subchapter C - Medical Assistance Programs. On the right is a box of recently added documents: Final Rules, Notices of Proposed Rulemaking, and Requests for Information.]]
+![Screenshot of the Medicaid & CHIP eRegulations tool homepage. The header displays 'Medicaid & CHIP eRegulations' in teal text on the left, with a 'Search Regulations' box on the right. Below is a teal banner containing navigation and search features: a 'Jump to Regulation Section' input field with a dropdown showing '§ 400' and a 'Go' button. Below are links to Title 42 - Public Health, Chapter 4, and Subchapters A - General Provisions and Subchapter C - Medical Assistance Programs. On the right is a box of recently added documents: Final Rules, Notices of Proposed Rulemaking, and Requests for Information.](static/eregs-product.png)
 
 ## The Problem
 
@@ -26,19 +32,19 @@ The answer was scattered: discovery research in one part of the repository, no o
 
 I created a conceptual model showing current state (above) vs. ideal state (below) – rough sketches in Excalidraw that I walked through with the product manager. I demonstrated how the team needed a "home" for research that connected outward to tools they already used (Dovetail, Google Docs, Mural), not a replacement system that required learning something new.
 
-![[notion-home.png|Diagram showing Notion as the research home, with two interconnected databases: Research Panel (containing person records with identifier, email, and research activities) and Research Activities (containing activity records with title, subject/topic, and links to Google Docs, Dovetail data, and Mural boards). Arrows show how Notion links outward to three tools: Google Docs (for planning and facilitation, containing links to Notion activity, planning notes, protocol, script, and debrief notes), Dovetail (for storing and synthesizing data, containing links to Notion activity, recordings, transcripts, and highlights/tags), and Mural (for planning and synthesizing, containing links to Notion activity and planning/synthesizing work).]]
+![Diagram showing Notion as the research home, with two interconnected databases: Research Panel (containing person records with identifier, email, and research activities) and Research Activities (containing activity records with title, subject/topic, and links to Google Docs, Dovetail data, and Mural boards). Arrows show how Notion links outward to three tools: Google Docs (for planning and facilitation, containing links to Notion activity, planning notes, protocol, script, and debrief notes), Dovetail (for storing and synthesizing data, containing links to Notion activity, recordings, transcripts, and highlights/tags), and Mural (for planning and synthesizing, containing links to Notion activity and planning/synthesizing work).](static/notion-home.png)
 
-![[notion-model.png|Dashboard diagram titled 'plan/track/report' showing the Notion Research Panel and Research Activities databases at the center, with bidirectional arrows connecting them. From the Research Activities box, three arrows branch outward to three functional areas: Plan/Facilitate (Google Doc with title, link to Notion activity item, planning notes, protocol, script, debrief notes), Store/Synthesize (Dovetail Data with title, link to Notion activity item, additional metadata, recording, transcript, highlights/tags), and Plan/Synthesize (Mural board with planning/synthesizing work and link to Notion activity item).]]
+![Dashboard diagram titled 'plan/track/report' showing the Notion Research Panel and Research Activities databases at the center, with bidirectional arrows connecting them. From the Research Activities box, three arrows branch outward to three functional areas: Plan/Facilitate (Google Doc with title, link to Notion activity item, planning notes, protocol, script, debrief notes), Store/Synthesize (Dovetail Data with title, link to Notion activity item, additional metadata, recording, transcript, highlights/tags), and Plan/Synthesize (Mural board with planning/synthesizing work and link to Notion activity item).](static/notion-model.png)
 
 ### Building the Infrastructure
 
 I designed two interconnected Notion databases:
 
 **Research Participants** — who we talked to, what activities they participated in, relevant details
-![[notion-panel.png|Notion database table titled 'Research panel' showing a list of research participants. Columns include Name, Organization Affiliation, Panel Status (showing status tags in different colors: Active participant in green, Potential participant in yellow, Respondent in purple, Contacted in orange), Active user (checkbox column), and Role/Stakeholder Type (showing various role indicators). The database includes filter, view, and sort options, and serves as a record of every person the team talks to and their research participation history.]]
+![Notion database table titled 'Research panel' showing a list of research participants. Columns include Name, Organization Affiliation, Panel Status (showing status tags in different colors: Active participant in green, Potential participant in yellow, Respondent in purple, Contacted in orange), Active user (checkbox column), and Role/Stakeholder Type (showing various role indicators). The database includes filter, view, and sort options, and serves as a record of every person the team talks to and their research participation history.](static/notion-panel.png)
 
 **Research Activities** — what research we did, who participated, links to plans, conversation guides, synthesis boards
-![[notion-activities.png||Notion database table titled 'Research activities' with the description 'This database lists all the research activities the eRegulations team conducts with stakeholders and users.' Columns include Activity (showing research activity types like 'User interview with' and 'Feedback session with'), Date (showing study date ranges), Research panel (showing linked participant records), and Subject/purpose (showing research topics and purposes). The database includes table view, filter, and sort options, and demonstrates how research activities are tracked and linked to their participating research panel members.]]
+![Notion database table titled 'Research activities' with the description 'This database lists all the research activities the eRegulations team conducts with stakeholders and users.' Columns include Activity (showing research activity types like 'User interview with' and 'Feedback session with'), Date (showing study date ranges), Research panel (showing linked participant records), and Subject/purpose (showing research topics and purposes). The database includes table view, filter, and sort options, and demonstrates how research activities are tracked and linked to their participating research panel members.](static/notion-activities.png)
 
 Notion became the hub. It linked out to Dovetail (our research repository), Google Docs (research plans and conversation guides), and Mural (synthesis boards). One system, multiple tools, clear connections.
 
@@ -69,7 +75,7 @@ The product manager and subject matter expert/policy expert started doing second
 
 The "aha moment" for the team was seeing how easy it was to use multiple systems that work together—not replacing tools, but connecting them with clear logic.
 
-![[feedback.png|Screenshot of the Dovetail research repository showing ongoing user feedback collection efforts from training sessions, user onboarding, surveys, small group feedback, formal presentations, and email.]]
+![Screenshot of the Dovetail research repository showing ongoing user feedback collection efforts from training sessions, user onboarding, surveys, small group feedback, formal presentations, and email.](static/feedback.png)
 
 ## The Impact
 
@@ -113,13 +119,3 @@ Teams already have tools they know. The breakthrough wasn't building a new syste
 - **Leadership without authority** — influencing how a team works through trust and clear thinking, not hierarchy
 - **Knowledge transfer** — building systems and practices that outlive your tenure
 - **Organizational design** — understanding that research is a practice, not a person
-
-
-
-
-
-
-
-
-
-
