@@ -21,4 +21,4 @@ Most of the time, teams know something is wrong before they know what it is. I'm
 
 ## Reach out
 
-<mark>Current status (Q2 2026):</mark> actively seeking full-time work and am also open to contract and freelance projects. If you think we'd work well together, I'd love to hear from you via my <a href="https://folio.drouin.website/contact/">contact form</a>.
+<mark>Current status (Q2 2026):</mark> actively seeking full-time work and open to contract and freelance projects. If you think we'd work well together, I'd love to hear from you via my <a href="https://folio.drouin.website/contact/">contact form</a>.
