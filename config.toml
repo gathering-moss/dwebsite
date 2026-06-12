@@ -87,11 +87,9 @@ csp = [
 	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"] },
 	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
 	{ directive = "media-src", domains = ["'self'", "https:"] },
-	{ directive = "script-src", domains = ["'self'"] },
-	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
-	{ directive = "connect-src", domains = ["https://toot.community"] },
-	{ directive = "base-uri", domains = ["'none'"] },
-	{ directive = "form-action", domains = ["'self'", "https://formspree.io"] }
+	{ directive = "script-src", domains = ["'self'", "https:"] },
+	{ directive = "form-action", domains = ["'self'", "https://formspree.io"] },
+	{ directive = "connect-src", domains = ["'self'", "https:"] }
 ]
 
 # Uncomment this to disable the card displayed in share previews
