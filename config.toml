@@ -91,7 +91,7 @@ csp = [
 	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community"] },
 	{ directive = "connect-src", domains = ["https://toot.community"] },
 	{ directive = "base-uri", domains = ["'none'"] },
-	{ directive = "form-action", domains = ["'none'"] }
+	{ directive = "form-action", domains = ["'self'", "https://formspree.io"] }
 ]
 
 # Uncomment this to disable the card displayed in share previews
