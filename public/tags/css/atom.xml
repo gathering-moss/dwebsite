@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>P. Moss Drouin - CSS</title>
+    <subtitle>Portfolio built with Zola.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://folio.drouin.website/tags/css/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://folio.drouin.website"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <id>https://folio.drouin.website/tags/css/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Style Guide</title>
+        <published>2026-03-12T00:00:00+00:00</published>
+        <updated>2026-03-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              P. Moss Drouin
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://folio.drouin.website/writings/style-guide/"/>
+        <id>https://folio.drouin.website/writings/style-guide/</id>
+        
+        <content type="html" xml:base="https://folio.drouin.website/writings/style-guide/">&lt;blockquote class=&quot;tip&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
+	&lt;p&gt;Recommended banner dimensions are 2:1 aspect ratio and 1920x960 resolution.&lt;br &#x2F;&gt;
+Other sizes will also work, but will be cut off at the bottom&#x2F;won’t be high enough.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;&#x2F;h1&gt;
+&lt;p&gt;This is a paragraph with some body text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;&#x2F;h2&gt;
+&lt;p&gt;This is another paragraph. You can have &lt;strong&gt;bold text&lt;&#x2F;strong&gt;, &lt;em&gt;italic text&lt;&#x2F;em&gt;, &lt;em&gt;&lt;strong&gt;bold and italic&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, and &lt;code&gt;inline code&lt;&#x2F;code&gt; mixed in with regular text.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;&#x2F;h5&gt;
+&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;&#x2F;h6&gt;
+&lt;h2 id=&quot;emphasis-and-links&quot;&gt;Emphasis and Links&lt;&#x2F;h2&gt;
+&lt;p&gt;Here’s a &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;google.com&quot;&gt;link to Google&lt;&#x2F;a&gt; and here’s one to an &lt;a href=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;&quot;&gt;internal page&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You can also use &lt;strong&gt;strong emphasis&lt;&#x2F;strong&gt; and &lt;em&gt;regular emphasis&lt;&#x2F;em&gt; throughout your text.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Item one&lt;&#x2F;li&gt;
+&lt;li&gt;Item two&lt;&#x2F;li&gt;
+&lt;li&gt;Item three
+&lt;ul&gt;
+&lt;li&gt;Nested item 3a&lt;&#x2F;li&gt;
+&lt;li&gt;Nested item 3b
+&lt;ul&gt;
+&lt;li&gt;Deeply nested item&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Item four&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;&#x2F;li&gt;
+&lt;li&gt;Second item&lt;&#x2F;li&gt;
+&lt;li&gt;Third item
+&lt;ol&gt;
+&lt;li&gt;Nested item 3a&lt;&#x2F;li&gt;
+&lt;li&gt;Nested item 3b&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Fourth item&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;checklists&quot;&gt;Checklists&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Completed task&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Another completed task&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Incomplete task&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Another incomplete task&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;code-blocks&quot;&gt;Code Blocks&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;rust&quot;&gt;fn main() {
+    let greeting = &amp;quot;Hello, world!&amp;quot;;
+    println!(&amp;quot;{}&amp;quot;, greeting);
+    
+    for i in 1..=5 {
+        println!(&amp;quot;Count: {}&amp;quot;, i);
+    }
+}
+
+Image by &amp;lt;a href=&amp;quot;https:&#x2F;&#x2F;pixabay.com&#x2F;users&#x2F;noname_13-2364555&#x2F;?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1685924&amp;quot;&amp;gt;NoName_13&amp;lt;&#x2F;a&amp;gt; from &amp;lt;a href=&amp;quot;https:&#x2F;&#x2F;pixabay.com&#x2F;&#x2F;?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1685924&amp;quot;&amp;gt;Pixabay&amp;lt;&#x2F;a&amp;gt;
+
++++
+title = &amp;quot;Demo Page&amp;quot;
+[extra]
+go_to_top = true
+styles = [&amp;quot;demo&#x2F;demo.css&amp;quot;]
+scripts = [&amp;quot;demo&#x2F;demo.js&amp;quot;]
+katex = true
+archive = &amp;quot;This page is in fact not archived. It is only here to demonstrate the archival statement.&amp;quot;
+trigger = &amp;quot;This page contains blackjack and hookers, and bad jokes such as this one.&amp;quot;
+disclaimer = &amp;quot;&amp;quot;&amp;quot;
+- All tricks in this page are performed by the lab boys, don&amp;#39;t try this at home.
+- Don&amp;#39;t expose yourself to 4000° kelvin.
+- Don&amp;#39;t take party escort submission position.
+- Don&amp;#39;t interact with asbestos and moon rocks.
+&amp;quot;&amp;quot;&amp;quot;
++++
+
+## Markdown
+
+Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time~~***.
+
+[Link to another page](@&#x2F;demo&#x2F;page.md).
+
+There should be whitespace between paragraphs[^1].
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+This is a normal paragraph[^2] following a header.
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;gt; &amp;quot;Original content is original only for a few seconds before getting old&amp;quot;
+&amp;gt; &amp;gt; Rule #21 of the internet
+
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+- Item 3
+- `Item 4`
+
+1. Perform step #1
+2. Proceed to step #2
+3. Conclude with step #3
+
+- [ ] Milk
+- [x] Eggs
+- [x] Flour
+- [ ] Coffee
+- [x] Combustible lemons
+
+[![Male mallard duck](https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;24&#x2F;Male_mallard_duck_2.jpg&#x2F;800px-Male_mallard_duck_2.jpg)](https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;2&#x2F;24&#x2F;Male_mallard_duck_2.jpg)
+
+| Mare         | Rating            | Additional info  |
+| :----------- | :---------------- | :--------------- |
+| Fluttershy   | Best pone         | Shy and adorable |
+| Apple Jack   | Good pone         | Honest and nice  |
+| Pinkie Pie   | Fun pone          | Parties and ADHD |
+| Twilight     | Main pone         | Neeerd           |
+| Rainbow Dash | Yes               | Looks badass     |
+| Rarity       | Fancy pone        | Generous         |
+| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
+
+```rust
+let highlight = true;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;scss&quot;&gt;pre mark {
+  &#x2F;&#x2F; If you want your highlights to take the full width
+  display: block;
+  color: currentcolor;
+}
+pre table td:nth-of-type(1) {
+  &#x2F;&#x2F; Select a colour matching your theme
+  color: #6b6b6b;
+  font-style: italic;
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;extra&quot;&gt;Extra&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;katex&quot;&gt;KaTeX&lt;&#x2F;h3&gt;
+&lt;p&gt;Duckquill can render LaTeX using the &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;katex.org&quot;&gt;KaTeX&lt;&#x2F;a&gt; library. It can be enabled using the &lt;code&gt;extra.katex&lt;&#x2F;code&gt; config variable.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;latex&quot;&gt;$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$$&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;latex&quot;&gt;$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shortcodes&quot;&gt;Shortcodes&lt;&#x2F;h3&gt;
+&lt;p&gt;Duckquill provides a few useful &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;content&#x2F;shortcodes&#x2F;&quot;&gt;shortcodes&lt;&#x2F;a&gt; that simplify some tasks. They can be used on all pages.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;alerts&quot;&gt;Alerts&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;get-started&#x2F;writing-on-github&#x2F;getting-started-with-writing-and-formatting-on-github&#x2F;basic-writing-and-formatting-syntax#alerts&quot;&gt;GitHub-style&lt;&#x2F;a&gt; alerts. Simply wrap the text of desired alert inside the shortcode to get the desired look.&lt;&#x2F;p&gt;
+&lt;p&gt;Available alert types:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;note&lt;&#x2F;code&gt;: Useful information that users should know, even when skimming content.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;tip&lt;&#x2F;code&gt;: Helpful advice for doing things better or more easily.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;important&lt;&#x2F;code&gt;: Key information users need to know to achieve their goal.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;warning&lt;&#x2F;code&gt;: Urgent info that needs immediate user attention to avoid problems.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;caution&lt;&#x2F;code&gt;: Advises about risks or negative outcomes of certain actions.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{% alert(note=true) %}
+-&amp;gt; Alert text &amp;lt;-
+{% end %}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;Useful information that users should know, even when skimming content.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote class=&quot;tip&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
+	&lt;p&gt;Helpful advice for doing things better or more easily.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote class=&quot;important&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Important&lt;&#x2F;p&gt;
+	&lt;p&gt;Key information users need to know to achieve their goal.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote class=&quot;warning&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Warning&lt;&#x2F;p&gt;
+	&lt;p&gt;Urgent info that needs immediate user attention to avoid problems.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote class=&quot;caution&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Caution&lt;&#x2F;p&gt;
+	&lt;p&gt;Advises about risks or negative outcomes of certain actions.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;h4 id=&quot;images-and-videos&quot;&gt;Images and Videos&lt;&#x2F;h4&gt;
+&lt;p&gt;By default images and videos come with some generic styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.&lt;&#x2F;p&gt;
+&lt;p&gt;Available variables are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;url&lt;&#x2F;code&gt;: URL to an image.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;url_min&lt;&#x2F;code&gt;: URL to compressed version of an image, original can be opened by clicking on the image.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;alt&lt;&#x2F;code&gt;: Alt text, same as if the text were inside square brackets in Markdown.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;full&lt;&#x2F;code&gt;: Forces image to be full-width.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;full_bleed&lt;&#x2F;code&gt;: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;start&lt;&#x2F;code&gt;: Float image to the start of paragraph and scale it down.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;end&lt;&#x2F;code&gt;: Float image to the end of paragraph and scale it down.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;pixels&lt;&#x2F;code&gt;: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;transparent&lt;&#x2F;code&gt;: Removes rounded corners and shadow, useful for images with transparency.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;no_hover&lt;&#x2F;code&gt;: Removes zoom on hover.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;spoiler&lt;&#x2F;code&gt;: Blurs image until hovered over&#x2F;pressed on, useful for plot rich game screenshots.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;spoiler&lt;&#x2F;code&gt; with &lt;code&gt;solid&lt;&#x2F;code&gt;: Ditto, but makes the image completely hidden.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{{ image(url=&amp;quot;image.png&amp;quot;, alt=&amp;quot;This is an image&amp;quot;, no_hover=true) }}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;figure&gt;
+&lt;img class=&quot;no-hover&quot;alt=&quot;Portal Gun blueprint&quot;src=&quot;https:&amp;#x2F;&amp;#x2F;i1.theportalwiki.net&amp;#x2F;img&amp;#x2F;2&amp;#x2F;23&amp;#x2F;Ashpd_blueprint.jpg&quot;&#x2F;&gt;
+&lt;figcaption&gt;Image with an alt text and without zoom on hover&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;figure&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;upload.wikimedia.org&amp;#x2F;wikipedia&amp;#x2F;commons&amp;#x2F;b&amp;#x2F;b4&amp;#x2F;JPEG_example_JPG_RIP_100.jpg&quot;&gt;
+		&lt;img class=&quot;no-hover&quot;alt=&quot;The gravestone of J.P.G.&quot;src=&quot;https:&amp;#x2F;&amp;#x2F;upload.wikimedia.org&amp;#x2F;wikipedia&amp;#x2F;commons&amp;#x2F;3&amp;#x2F;38&amp;#x2F;JPEG_example_JPG_RIP_010.jpg&quot;&#x2F;&gt;
+	&lt;&#x2F;a&gt;
+&lt;figcaption&gt;Image with compressed version, an alt text, and without zoom on hover&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;figure&gt;
+&lt;img class=&quot;spoiler&quot;alt=&quot;Portal Gun blueprint&quot;src=&quot;https:&amp;#x2F;&amp;#x2F;files.catbox.moe&amp;#x2F;lk7nee.jpg&quot;&#x2F;&gt;
+&lt;figcaption&gt;Image with an alt text, hidden behind a spoiler&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g. such images will render normally in any Markdown editor, opposed to the Zola shortcodes.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#full&lt;&#x2F;code&gt;: Forces image to be full-width.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#full-bleed&lt;&#x2F;code&gt;: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#start&lt;&#x2F;code&gt;: Float image to the start of paragraph and scale it down.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#end&lt;&#x2F;code&gt;: Float image to the end of paragraph and scale it down.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#pixels&lt;&#x2F;code&gt;: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#transparent&lt;&#x2F;code&gt;: Removes rounded corners and shadow, useful for images with transparency.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#no-hover&lt;&#x2F;code&gt;: Removes zoom on hover.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#spoiler&lt;&#x2F;code&gt;: Blurs image until hovered over&#x2F;pressed on, useful for plot rich game screenshots.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;#spoiler&lt;&#x2F;code&gt; with &lt;code&gt;#solid&lt;&#x2F;code&gt;: Ditto, but makes the image completely hidden.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;br &#x2F;&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;containertoolbx.org&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;containertoolbx.org&#x2F;assets&#x2F;toolbx.gif#full#pixels#transparent#no-hover&quot; alt=&quot;Toolbx header image&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;figcaption&gt;Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;br &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1b&#x2F;1966_Ford_Mustang_coupe_white_003.jpg&#x2F;320px-1966_Ford_Mustang_coupe_white_003.jpg#start&quot; alt=&quot;1966 Ford Mustang coupe white&quot; &#x2F;&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;br &#x2F;&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;unsplash.com&#x2F;photos&#x2F;a-mountain-lake-surrounded-by-trees-and-snow-CqTOTZh5vrs&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;images.unsplash.com&#x2F;photo-1635410773896-da585e1fe138?q=80&amp;amp;w=2063&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full-bleed&quot; alt=&quot;Picture of the magnificent lej da staz just before sunrise in october&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For videos it’s all the same except for a few differences: &lt;code&gt;no_hover&lt;&#x2F;code&gt; and &lt;code&gt;url_min&lt;&#x2F;code&gt; variables are not available.&lt;&#x2F;p&gt;
+&lt;p&gt;Additionally, the following &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Element&#x2F;video#attributes&quot;&gt;attributes&lt;&#x2F;a&gt; can be set:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;autoplay&lt;&#x2F;code&gt;: Start playing the video automatically.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;controls&lt;&#x2F;code&gt;: Display video controls such as volume control, seeking and pause&#x2F;resume.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;loop&lt;&#x2F;code&gt;: Play the video again once it ends.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;muted&lt;&#x2F;code&gt;: Turn off the audio by default.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;playsinline&lt;&#x2F;code&gt;: Prevent the video from playing in fullscreen by default (depends on the browser).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{{ video(url=&amp;quot;video.webm&amp;quot;, alt=&amp;quot;This is a video&amp;quot;, controls=true) }}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;figure&gt;
+&lt;video class=&quot;&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;interactive-examples.mdn.mozilla.net&amp;#x2F;media&amp;#x2F;cc0-videos&amp;#x2F;flower.webm&quot;aria-title=&quot;Red flower wakes up&quot;controls&gt;&lt;&#x2F;video&gt;
+
+&lt;figcaption&gt;WebM video example from MDN&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;figure&gt;
+&lt;video class=&quot;full-bleed&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;upload.wikimedia.org&amp;#x2F;wikipedia&amp;#x2F;commons&amp;#x2F;transcoded&amp;#x2F;0&amp;#x2F;0e&amp;#x2F;Duckling_preening_%2881313%29.webm&amp;#x2F;Duckling_preening_%2881313%29.webm.720p.vp9.webm&quot;aria-title=&quot;Duckling preening&quot;controls&gt;&lt;&#x2F;video&gt;
+
+&lt;figcaption&gt;Duckling preening&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h4 id=&quot;crt&quot;&gt;CRT&lt;&#x2F;h4&gt;
+&lt;p&gt;Alright, this one doesn’t simplify anything, it just adds a CRT-like effect around Markdown code blocks.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{% crt() %}
+-&amp;gt; Markdown code block &amp;lt;-
+{% end %}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;crt scanlines&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;pre&gt;&lt;code&gt; _____________________________________________
+|.&amp;#39;&amp;#39;,        Public_Library_Halls         ,&amp;#39;&amp;#39;.|
+|.&amp;#39;.&amp;#39;&amp;#39;,                                 ,&amp;#39;&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;&amp;#39;,                             ,&amp;#39;&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;&amp;#39;,                         ,&amp;#39;&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|                         |.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|===;                 ;===|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|:::|&amp;#39;,             ,&amp;#39;|:::|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|---|&amp;#39;.|, _______ ,|.&amp;#39;|---|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|:::|&amp;#39;.|&amp;#39;|???????|&amp;#39;|.&amp;#39;|:::|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|,&amp;#39;,&amp;#39;,&amp;#39;,&amp;#39;,|---|&amp;#39;,|&amp;#39;|???????|&amp;#39;|,&amp;#39;|---|,&amp;#39;,&amp;#39;,&amp;#39;,&amp;#39;,|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|:::|&amp;#39;.|&amp;#39;|???????|&amp;#39;|.&amp;#39;|:::|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|---|&amp;#39;,&amp;#39;   &#x2F;%%%\   &amp;#39;,&amp;#39;|---|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|===:&amp;#39;    &#x2F;%%%%%\    &amp;#39;:===|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|%%%%%%%%%%%%%%%%%%%%%%%%%|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;,&amp;#39;       &#x2F;%%%%%%%%%\       &amp;#39;,&amp;#39;.&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;.&amp;#39;,&amp;#39;        &#x2F;%%%%%%%%%%%\        &amp;#39;,&amp;#39;.&amp;#39;.&amp;#39;.|
+|.&amp;#39;.&amp;#39;,&amp;#39;         &#x2F;%%%%%%%%%%%%%\         &amp;#39;,&amp;#39;.&amp;#39;.|
+|.&amp;#39;,&amp;#39;          &#x2F;%%%%%%%%%%%%%%%\          &amp;#39;,&amp;#39;.|
+|;____________&#x2F;%%%%%Spicer%%%%%%\____________;|
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+
+&lt;&#x2F;div&gt;
+&lt;p&gt;There’s also a &lt;code&gt;cursor&lt;&#x2F;code&gt; class that you can add to a span with e.g. &lt;code&gt;█&lt;&#x2F;code&gt; character to simulate the terminal cursor. It doesn’t work from inside Markdown code blocks though.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;youtube&quot;&gt;YouTube&lt;&#x2F;h4&gt;
+&lt;p&gt;Allows to embed a YouTube video using youtube-nocookie.&lt;&#x2F;p&gt;
+&lt;p&gt;Available variables are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;autoplay&lt;&#x2F;code&gt;: Whether the video should autoplay.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;start&lt;&#x2F;code&gt;: On which second video should start.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{{ youtube(id=&amp;quot;0Da8ZhKcNKQ&amp;quot;) }}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;iframe
+	class=&quot;youtube-embed&quot;
+	src=&quot;https:&#x2F;&#x2F;www.youtube-nocookie.com&#x2F;embed&#x2F;0Da8ZhKcNKQ&quot;
+	allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot;
+	referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;
+&lt;&#x2F;iframe&gt;
+&lt;h4 id=&quot;vimeo&quot;&gt;Vimeo&lt;&#x2F;h4&gt;
+&lt;p&gt;Allows to embed a Vimeo video.&lt;&#x2F;p&gt;
+&lt;p&gt;Available variables are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;autoplay&lt;&#x2F;code&gt;: Whether the video should autoplay.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{{ vimeo(id=&amp;quot;869483483&amp;quot;) }}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;iframe
+    class=&quot;vimeo-embed&quot;
+    src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;869483483&quot;
+    allow=&quot;autoplay; fullscreen; picture-in-picture&quot;
+    allowfullscreen&gt;
+&lt;&#x2F;iframe&gt;
+&lt;h4 id=&quot;mastodon&quot;&gt;Mastodon&lt;&#x2F;h4&gt;
+&lt;p&gt;Allows to embed a Mastodon post.&lt;&#x2F;p&gt;
+&lt;p&gt;Available variables are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;host&lt;&#x2F;code&gt;: The instance on which the post resides. If not set, it will fallback to the one set in the &lt;code&gt;[extra.comments]&lt;&#x2F;code&gt; section of &lt;code&gt;config.toml&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;user&lt;&#x2F;code&gt;: The poster. If not set, it will fallback to the one set in the &lt;code&gt;[extra.comments]&lt;&#x2F;code&gt; section of &lt;code&gt;config.toml&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;&#x2F;code&gt;: The ID of the post, usually at the end of the URL.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;jinja2&quot;&gt;{{ mastodon(host=&amp;quot;toot.community&amp;quot;, user=&amp;quot;sungsphinx&amp;quot;, id=&amp;quot;111789185826519979&amp;quot;) }}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;iframe
+	class=&quot;mastodon-embed&quot;
+	src=&quot;https:&#x2F;&#x2F;toot.community&#x2F;@sungsphinx&#x2F;111789185826519979&#x2F;embed&quot;&gt;
+&lt;&#x2F;iframe&gt;
+&lt;h3 id=&quot;description-list-dl&quot;&gt;Description List (&lt;code&gt;&amp;lt;dl&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;dl&amp;gt;
+&amp;lt;dt&amp;gt;Something&amp;lt;&#x2F;dt&amp;gt;
+&amp;lt;dd&amp;gt;And its description&amp;lt;&#x2F;dd&amp;gt;
+&amp;lt;&#x2F;dl&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;dl&gt;
+&lt;dt&gt;Name&lt;&#x2F;dt&gt;
+&lt;dd&gt;Godzilla&lt;&#x2F;dd&gt;
+&lt;dt&gt;Born&lt;&#x2F;dt&gt;
+&lt;dd&gt;1952&lt;&#x2F;dd&gt;
+&lt;dt&gt;Birthplace&lt;&#x2F;dt&gt;
+&lt;dd&gt;Japan&lt;&#x2F;dd&gt;
+&lt;dt&gt;Color&lt;&#x2F;dt&gt;
+&lt;dd&gt;Green&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+&lt;h3 id=&quot;form-input-input&quot;&gt;Form Input (&lt;code&gt;&amp;lt;input&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; &#x2F;&amp;gt;
+&amp;lt;label&amp;gt;Checkbox&amp;lt;&#x2F;label&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Milk&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Eggs&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Flour&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; checked &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Coffee&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;checkbox&quot; disabled &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Combustible lemons&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;With &lt;code&gt;switch&lt;&#x2F;code&gt; class:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;input class=&amp;quot;switch&amp;quot; type=&amp;quot;checkbox&amp;quot; &#x2F;&amp;gt;
+&amp;lt;label&amp;gt;Checkbox&amp;lt;&#x2F;label&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Milk&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Eggs&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Flour&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch&quot; type=&quot;checkbox&quot; checked &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Coffee&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch&quot; type=&quot;checkbox&quot; disabled &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Combustible lemons&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;With &lt;code&gt;switch&lt;&#x2F;code&gt; and &lt;code&gt;big&lt;&#x2F;code&gt; classes:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;input class=&amp;quot;switch big&amp;quot; type=&amp;quot;checkbox&amp;quot; &#x2F;&amp;gt;
+&amp;lt;label&amp;gt;Checkbox&amp;lt;&#x2F;label&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch big&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Milk&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch big&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Eggs&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch big&quot; type=&quot;checkbox&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Flour&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch big&quot; type=&quot;checkbox&quot; checked &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Coffee&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input class=&quot;switch big&quot; type=&quot;checkbox&quot; disabled &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Combustible lemons&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;With &lt;code&gt;radio&lt;&#x2F;code&gt; type:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;test&amp;quot; &#x2F;&amp;gt;
+&amp;lt;label&amp;gt;Radio&amp;lt;&#x2F;label&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Milk&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Eggs&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test&quot; &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Flour&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test&quot; checked &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Coffee&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test&quot; disabled &#x2F;&gt;
+    &lt;label&gt;&amp;nbsp;Combustible lemons&lt;&#x2F;label&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;With &lt;code&gt;color&lt;&#x2F;code&gt; type:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;label&amp;gt;Color:&amp;lt;&#x2F;label&amp;gt;
+&amp;lt;input type=&amp;quot;color&amp;quot; value=&amp;quot;#000000&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;label for=&quot;color&quot;&gt;Color:&lt;&#x2F;label&gt;
+&lt;input id=&quot;color&quot; type=&quot;color&quot; value=&quot;#b57edc&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;label for=&quot;color&quot;&gt;Disabled:&lt;&#x2F;label&gt;
+&lt;input id=&quot;color&quot; type=&quot;color&quot; value=&quot;#b57edc&quot; disabled &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With &lt;code&gt;range&lt;&#x2F;code&gt; type:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;input type=&amp;quot;range&amp;quot; max=&amp;quot;100&amp;quot; value=&amp;quot;33&amp;quot;&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;input type=&quot;range&quot; max=&quot;100&quot; value=&quot;33&quot; id=&quot;range&quot;&gt;
+&lt;!-- For the demo purposes only --&gt;
+&lt;small id=&quot;range-value&quot;&gt;&lt;&#x2F;small&gt;
+&lt;!-- End --&gt;
+&lt;h3 id=&quot;figure-captions-figcaption&quot;&gt;Figure Captions (&lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;markdown&quot;&gt;&amp;lt;figure&amp;gt;
+  -&amp;gt; Whatever content &amp;lt;-
+  &amp;lt;figcaption&amp;gt;Caption of content above&amp;lt;&#x2F;figcaption&amp;gt;
+&amp;lt;&#x2F;figure&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.ibb.co&#x2F;MPDJRsT&#x2F;ImMAXM3.png&quot; alt=&quot;The Office&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+  &lt;figcaption&gt;The Office where Stanley works, it has yellow floor and beige walls&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h3 id=&quot;accordion-details&quot;&gt;Accordion (&lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;markdown&quot;&gt;&amp;lt;details&amp;gt;
+  &amp;lt;summary&amp;gt;Accordion title&amp;lt;&#x2F;summary&amp;gt;
+  -&amp;gt; Contents here &amp;lt;-
+&amp;lt;&#x2F;details&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;details&gt;
+  &lt;summary&gt;Reveal accordion&lt;&#x2F;summary&gt;
+&lt;p&gt;Get it? I know, it’s an awful pun.
+&lt;img src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1b&#x2F;PianoAccordeon.jpg&#x2F;916px-PianoAccordeon.jpg#transparent#no-hover&quot; alt=&quot;Piano Accordion&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;details&gt;
+&lt;h3 id=&quot;side-comment-small&quot;&gt;Side Comment (&lt;code&gt;&amp;lt;small&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;small&amp;gt;Small, cute text that doesn&amp;#39;t catch attention.&amp;lt;&#x2F;small&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;small&gt;Small, cute text that doesn’t catch attention.&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;abbreviation-abbr&quot;&gt;Abbreviation (&lt;code&gt;&amp;lt;abbr&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;abbr title=&amp;quot;American Standard Code for Information Interchange&amp;quot;&amp;gt;ASCII&amp;lt;&#x2F;abbr&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The &lt;abbr title=&quot;American Standard Code for Information Interchange&quot;&gt;ASCII&lt;&#x2F;abbr&gt; art is awesome!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;aside-aside&quot;&gt;Aside (&lt;code&gt;&amp;lt;aside&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;aside&amp;gt;
+
+-&amp;gt; Contents here &amp;lt;-
+&amp;lt;&#x2F;aside&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;aside&gt;
+&lt;p&gt;Quill and a parchment&lt;&#x2F;p&gt;
+&lt;img class=&quot;transparent no-hover&quot; style=&quot;margin-block-end: 0; border-radius: 0;&quot; alt=&quot;Quill and a parchment&quot; src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;b&#x2F;b9&#x2F;%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg&#x2F;326px-%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg&quot; &#x2F;&gt;
+&lt;&#x2F;aside&gt;
+&lt;p&gt;A quill is a writing tool made from a moulted flight feather (preferably a primary wing-feather) of a large bird. Quills were used for writing with ink before the invention of the dip pen, the metal-nibbed pen, the fountain pen, and, eventually, the ballpoint pen.&lt;&#x2F;p&gt;
+&lt;p&gt;As with the earlier reed pen (and later dip pen), a quill has no internal ink reservoir and therefore needs to periodically be dipped into an inkwell during writing. The hand-cut goose quill is rarely used as a calligraphy tool anymore because many papers are now derived from wood pulp and would quickly wear a quill down. However it is still the tool of choice for a few scribes who have noted that quills provide an unmatched sharp stroke as well as greater flexibility than a steel pen.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;keyboard-input-kbd&quot;&gt;Keyboard Input (&lt;code&gt;&amp;lt;kbd&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;kbd&amp;gt;⌘ Command&amp;lt;&#x2F;kbd&amp;gt;.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To switch the keyboard layout, press &lt;kbd&gt;⌘ Super&lt;&#x2F;kbd&gt; + &lt;kbd&gt;Space&lt;&#x2F;kbd&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;mark-text-mark&quot;&gt;Mark Text (&lt;code&gt;&amp;lt;mark&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;mark&amp;gt;Marked text&amp;lt;&#x2F;mark&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You know what? I’m gonna say some &lt;mark&gt;very important&lt;&#x2F;mark&gt; stuff, so &lt;mark&gt;important&lt;&#x2F;mark&gt; that even &lt;strong&gt;bold&lt;&#x2F;strong&gt; is not enough.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;deleted-and-inserted-text-del-and-ins&quot;&gt;Deleted and Inserted Text (&lt;code&gt;&amp;lt;del&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;lt;ins&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;del&amp;gt;Something deleted&amp;lt;&#x2F;del&amp;gt; &amp;lt;ins&amp;gt;Something added&amp;lt;&#x2F;ins&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;del&gt;Text deleted&lt;&#x2F;del&gt; &lt;ins&gt;Text added&lt;&#x2F;ins&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;progress-indicator-progress&quot;&gt;Progress Indicator (&lt;code&gt;&amp;lt;progress&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;progress&amp;gt;&amp;lt;&#x2F;progress&amp;gt;
+&amp;lt;progress value=&amp;quot;33&amp;quot; max=&amp;quot;100&amp;quot;&amp;gt;&amp;lt;&#x2F;progress&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;progress&gt;&lt;&#x2F;progress&gt;
+&lt;progress value=&quot;33&quot; max=&quot;100&quot;&gt;&lt;&#x2F;progress&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;sample-output-samp&quot;&gt;Sample Output (&lt;code&gt;&amp;lt;samp&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;samp&amp;gt;Sample Output&amp;lt;&#x2F;samp&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;samp&gt;Sample Output&lt;&#x2F;samp&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;inline-quotation-q&quot;&gt;Inline Quotation (&lt;code&gt;&amp;lt;q&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;q&amp;gt;Someone said something&amp;lt;&#x2F;q&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Blah blah &lt;q&gt;Inline Quote&lt;&#x2F;q&gt; hmm.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;unarticulated-annotation-u&quot;&gt;Unarticulated Annotation (&lt;code&gt;&amp;lt;u&amp;gt;&lt;&#x2F;code&gt;)&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;u&amp;gt;Gmarrar mitsakes&amp;lt;&#x2F;u&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;u&gt;Yeet&lt;&#x2F;u&gt; the &lt;u&gt;sus&lt;&#x2F;u&gt; drip while &lt;u&gt;vibing&lt;&#x2F;u&gt; with the &lt;u&gt;TikTok&lt;&#x2F;u&gt; &lt;u&gt;fam&lt;&#x2F;u&gt; on a cap-free boomerang.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;external-links&quot;&gt;External Links&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;a class=&amp;quot;external&amp;quot; href=&amp;quot;https:&#x2F;&#x2F;example.org&amp;quot;&amp;gt;External link&amp;lt;&#x2F;a&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;example.org&quot;&gt;Link to site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spoilers&quot;&gt;Spoilers&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;span class=&amp;quot;spoiler&amp;quot;&amp;gt;Some spoiler&amp;lt;&#x2F;span&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You know, &lt;span class=&quot;spoiler&quot;&gt;Duckquill is a pretty dumb name.&lt;&#x2F;span&gt; I know, crazy.&lt;&#x2F;p&gt;
+&lt;p&gt;With &lt;code&gt;solid&lt;&#x2F;code&gt; class:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;span class=&amp;quot;spoiler solid&amp;quot;&amp;gt;Some spoiler&amp;lt;&#x2F;span&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You know, &lt;span class=&quot;spoiler solid&quot;&gt;Duckquill is a pretty dumb name.&lt;&#x2F;span&gt; I know, crazy.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;buttons-dialog&quot;&gt;Buttons Dialog&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html.j2&quot;&gt;&amp;lt;div class=&amp;quot;buttons&amp;quot;&amp;gt;
+  &amp;lt;a href=&amp;quot;#top&amp;quot;&amp;gt;Go to Top&amp;lt;&#x2F;a&amp;gt;
+  &amp;lt;a class=&amp;quot;colored external&amp;quot; href=&amp;quot;https:&#x2F;&#x2F;example.org&amp;quot;&amp;gt;Example&amp;lt;&#x2F;a&amp;gt;
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;buttons&quot;&gt;
+  &lt;a href=&quot;#top&quot;&gt;Go to Top&lt;&#x2F;a&gt;
+  &lt;a class=&quot;colored external&quot; href=&quot;https:&#x2F;&#x2F;example.org&quot;&gt;Example&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;With &lt;code&gt;centered&lt;&#x2F;code&gt; and &lt;code&gt;big&lt;&#x2F;code&gt; classes:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html.j2&quot;&gt;&amp;lt;div class=&amp;quot;buttons centered&amp;quot;&amp;gt;
+  &amp;lt;button class=&amp;quot;big colored&amp;quot;&amp;gt;Do Something…&amp;lt;&#x2F;button&amp;gt;
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;buttons centered&quot;&gt;
+  &lt;button class=&quot;big colored&quot;&gt;Do Something…&lt;&#x2F;button&gt;
+&lt;&#x2F;div&gt;
+&lt;!-- For the demo purposes only --&gt;
+&lt;div id=&quot;color-picker-container&quot;&gt;
+  &lt;small&gt;Accent color:&lt;&#x2F;small&gt;
+  &lt;input id=&quot;color-picker-light&quot; type=&quot;color&quot; value=&quot;#ff7800&quot; &#x2F;&gt;
+  &lt;label for=&quot;color-picker-light&quot;&gt;Light theme&lt;&#x2F;label&gt;
+  &lt;br &#x2F;&gt;
+  &lt;input id=&quot;color-picker-dark&quot; type=&quot;color&quot; value=&quot;#ffa348&quot; &#x2F;&gt;
+  &lt;label for=&quot;color-picker-dark&quot;&gt;Dark theme&lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+&lt;!-- End --&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;section&gt;
+</content>
+        
+    </entry>
+</feed>

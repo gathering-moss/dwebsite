@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>P. Moss Drouin - Research, Design</title>
+    <subtitle>Portfolio built with Zola.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://folio.drouin.website/tags/research-design/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://folio.drouin.website"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <id>https://folio.drouin.website/tags/research-design/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Research systems</title>
+        <published>2026-03-12T00:00:00+00:00</published>
+        <updated>2026-03-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              P. Moss Drouin
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://folio.drouin.website/writings/building-a-research-system/"/>
+        <id>https://folio.drouin.website/writings/building-a-research-system/</id>
+        
+        <content type="html" xml:base="https://folio.drouin.website/writings/building-a-research-system/">&lt;h1 id=&quot;implementing-research-systems-that-scale&quot;&gt;Implementing research systems that scale&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;eregs-product.png&quot; alt=&quot;Screenshot of the Medicaid &amp;amp; CHIP eRegulations tool homepage. The header displays ‘Medicaid &amp;amp; CHIP eRegulations’ in teal text on the left, with a ‘Search Regulations’ box on the right. Below is a teal banner containing navigation and search features: a ‘Jump to Regulation Section’ input field with a dropdown showing ‘§ 400’ and a ‘Go’ button. Below are links to Title 42 - Public Health, Chapter 4, and Subchapters A - General Provisions and Subchapter C - Medical Assistance Programs. On the right is a box of recently added documents: Final Rules, Notices of Proposed Rulemaking, and Requests for Information.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h2&gt;
+&lt;p&gt;I joined the eRegulations team from the beginning as a half-time designer&#x2F;researcher, splitting my time between this team and another. Early on, I contributed to research by learning how regulations are structured and used by policy experts and conducting comparative reviews of policy research tools.&lt;&#x2F;p&gt;
+&lt;p&gt;But I was watching something troubling happen: the team had completed discovery research, but no one could see how it connected to the next phase of work. There was confusion and frustration. The discovery research existed, but it was organized in a way that only the original researcher understood. The team cared deeply about research, but the current system wasn’t working.&lt;&#x2F;p&gt;
+&lt;p&gt;When the researcher moved to another team, I stepped in to take over research. We were at a critical moment: we had mountains of discovery insights and a ton of evaluative research ahead of us. The team needed research to be accessible, usable, and collaborative.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-approach&quot;&gt;The Approach&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;diagnosing-the-system&quot;&gt;Diagnosing the System&lt;&#x2F;h3&gt;
+&lt;p&gt;I started by mapping the current state: where were research artifacts living? How were they organized? Who could access them? What happened when someone needed an insight?&lt;&#x2F;p&gt;
+&lt;p&gt;The answer was scattered: discovery research in one part of the repository, no one understood the structure, templates didn’t exist, and there was no shared understanding about what counted as “research” or “an insight.” We needed a home and a shared vocabulary.&lt;&#x2F;p&gt;
+&lt;p&gt;I created a conceptual model showing current state (above) vs. ideal state (below) – rough sketches in Excalidraw that I walked through with the product manager. I demonstrated how the team needed a “home” for research that connected outward to tools they already used (Dovetail, Google Docs, Mural), not a replacement system that required learning something new.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;notion-home.png&quot; alt=&quot;Diagram showing Notion as the research home, with two interconnected databases: Research Panel (containing person records with identifier, email, and research activities) and Research Activities (containing activity records with title, subject&#x2F;topic, and links to Google Docs, Dovetail data, and Mural boards). Arrows show how Notion links outward to three tools: Google Docs (for planning and facilitation, containing links to Notion activity, planning notes, protocol, script, and debrief notes), Dovetail (for storing and synthesizing data, containing links to Notion activity, recordings, transcripts, and highlights&#x2F;tags), and Mural (for planning and synthesizing, containing links to Notion activity and planning&#x2F;synthesizing work).&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;notion-model.png&quot; alt=&quot;Dashboard diagram titled ‘plan&#x2F;track&#x2F;report’ showing the Notion Research Panel and Research Activities databases at the center, with bidirectional arrows connecting them. From the Research Activities box, three arrows branch outward to three functional areas: Plan&#x2F;Facilitate (Google Doc with title, link to Notion activity item, planning notes, protocol, script, debrief notes), Store&#x2F;Synthesize (Dovetail Data with title, link to Notion activity item, additional metadata, recording, transcript, highlights&#x2F;tags), and Plan&#x2F;Synthesize (Mural board with planning&#x2F;synthesizing work and link to Notion activity item).&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;building-the-infrastructure&quot;&gt;Building the Infrastructure&lt;&#x2F;h3&gt;
+&lt;p&gt;I designed two interconnected Notion databases:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Research Participants&lt;&#x2F;strong&gt; — who we talked to, what activities they participated in, relevant details
+&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;notion-panel.png&quot; alt=&quot;Notion database table titled ‘Research panel’ showing a list of research participants. Columns include Name, Organization Affiliation, Panel Status (showing status tags in different colors: Active participant in green, Potential participant in yellow, Respondent in purple, Contacted in orange), Active user (checkbox column), and Role&#x2F;Stakeholder Type (showing various role indicators). The database includes filter, view, and sort options, and serves as a record of every person the team talks to and their research participation history.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Research Activities&lt;&#x2F;strong&gt; — what research we did, who participated, links to plans, conversation guides, synthesis boards
+&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;notion-activities.png&quot; alt=&quot;Notion database table titled ‘Research activities’ with the description ‘This database lists all the research activities the eRegulations team conducts with stakeholders and users.’ Columns include Activity (showing research activity types like ‘User interview with’ and ‘Feedback session with’), Date (showing study date ranges), Research panel (showing linked participant records), and Subject&#x2F;purpose (showing research topics and purposes). The database includes table view, filter, and sort options, and demonstrates how research activities are tracked and linked to their participating research panel members.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Notion became the hub. It linked out to Dovetail (our research repository), Google Docs (research plans and conversation guides), and Mural (synthesis boards). One system, multiple tools, clear connections.&lt;&#x2F;p&gt;
+&lt;p&gt;I also created templates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Research plan template&lt;&#x2F;li&gt;
+&lt;li&gt;Conversation guide template&lt;&#x2F;li&gt;
+&lt;li&gt;Research insights template&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The templates weren’t just formats, they embedded good research practice. A research plan template that starts with “What do you want to know?” forces you to think about methodology before jumping to execution.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;making-research-collaborative&quot;&gt;Making Research Collaborative&lt;&#x2F;h3&gt;
+&lt;p&gt;I ran back-to-back evaluative research: early design concepts → mid-fidelity prototypes → live prototype testing. But I didn’t do it alone.&lt;&#x2F;p&gt;
+&lt;p&gt;I paired with designers and taught them:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to write a research plan guided by research questions&lt;&#x2F;li&gt;
+&lt;li&gt;How to facilitate a research session&lt;&#x2F;li&gt;
+&lt;li&gt;How to do collaborative analysis and synthesis&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;They ran usability tests, preference tests, surveys. The repository structure meant they knew exactly where to document findings and how to connect them to previous research.&lt;&#x2F;p&gt;
+&lt;p&gt;The product manager and subject matter expert&#x2F;policy expert started doing secondary research—literature reviews, competitive analysis, synthesis of existing data. They didn’t have to start from scratch each time; they could leverage insights we’d already collected and carry that work forward for new initiatives.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-shift&quot;&gt;The Shift&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Before:&lt;&#x2F;strong&gt; Research was a specialist activity that only one person did, and artifacts lived in a black box. Team members cared about research but felt locked out.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;After:&lt;&#x2F;strong&gt; Research became a shared practice. The team understood the structure. Multiple people could contribute—designers running tests, PM doing secondary research, SME synthesizing policy implications. New team members could step in and immediately understand what had been done and why it mattered.&lt;&#x2F;p&gt;
+&lt;p&gt;The “aha moment” for the team was seeing how easy it was to use multiple systems that work together—not replacing tools, but connecting them with clear logic.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;building-a-research-system&#x2F;static&#x2F;feedback.png&quot; alt=&quot;Screenshot of the Dovetail research repository showing ongoing user feedback collection efforts from training sessions, user onboarding, surveys, small group feedback, formal presentations, and email.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-impact&quot;&gt;The Impact&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;immediate&quot;&gt;Immediate&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Capacity expanded&lt;&#x2F;strong&gt;:&lt;br&gt; &lt;br&gt;Designers, PM, and SME all contributing research activities&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Research became usable&lt;&#x2F;strong&gt;:&lt;br&gt; &lt;br&gt;Team could navigate it, understand it, build on it&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Shared language emerged&lt;&#x2F;strong&gt;:&lt;br&gt; &lt;br&gt;Everyone understood what “research question,” “insight,” “synthesis” meant&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;lasting&quot;&gt;Lasting&lt;&#x2F;h3&gt;
+&lt;p&gt;The systems I built outlived my tenure. The team was able to backfill my position with a junior researcher instead of a senior one, because the research practice and infrastructure were strong enough that a less-experienced researcher could step in and succeed.&lt;&#x2F;p&gt;
+&lt;p&gt;When the team later faced a situation where they couldn’t access users (for this policy research tool), they didn’t slow down – they didn’t have to. They had two years of organized research to draw from. They leveraged existing insights and data to keep moving forward until they could conduct new research again.&lt;&#x2F;p&gt;
+&lt;p&gt;When the junior researcher who replaced me was promoted to another team, he reflected on the value of the systems I built:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The most valuable thing was being able to go back to find things that we learned before, or research that was done before. I’ve become more appreciative of that because I’ve had to do a lot of that in my new project in Confluence. The previous team didn’t have a super solid repository, and I’ve already run into things where there was this whole chunk of research that existed that I didn’t have access to or didn’t get to read about until now. Dovetail was pretty comprehensive in how it allowed me to find past research. I think that might be a factor of the structure that existed before—especially for eRegs. I think it was solid. I greatly benefited from there being a structure in the tool when I started&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;key-learnings&quot;&gt;Key Learnings&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Systems thinking matters as much as research skill&lt;&#x2F;strong&gt;
+You can do brilliant research, but if no one can find it or understand it, it doesn’t compound. Building systems that make research accessible and usable is as important as the research itself.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Trust enables systems work&lt;&#x2F;strong&gt;
+I had buy-in from my product manager because I built a high level of trust with her over time. That trust meant she was willing to invest time in redesigning how we worked, even when it wasn’t directly tied to shipping a feature.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Templates embed best practices&lt;&#x2F;strong&gt;
+A good template isn’t just a format—it’s a way to encode good research practice into the team’s workflow. A research plan template that starts with research questions forces methodological thinking before execution.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Capacity building is succession planning&lt;&#x2F;strong&gt;
+By making research collaborative and teaching others how to do it, I made myself less necessary. That’s not a bug—it’s the goal. The team’s research capacity didn’t depend on me staying; it depended on systems and skills that could outlive my tenure.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Connect tools; don’t replace them&lt;&#x2F;strong&gt;
+Teams already have tools they know. The breakthrough wasn’t building a new system—it was creating a hub (Notion) that connected existing tools (Dovetail, Google Docs, Mural) with clear logic and shared language.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;this-work-exemplifies&quot;&gt;This work exemplifies&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Systems thinking&lt;&#x2F;strong&gt; — diagnosing organizational problems and designing solutions that scale&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Leadership without authority&lt;&#x2F;strong&gt; — influencing how a team works through trust and clear thinking, not hierarchy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Knowledge transfer&lt;&#x2F;strong&gt; — building systems and practices that outlive your tenure&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Organizational design&lt;&#x2F;strong&gt; — understanding that research is a practice, not a person&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Co-designing with data</title>
+        <published>2026-03-12T00:00:00+00:00</published>
+        <updated>2026-03-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              P. Moss Drouin
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://folio.drouin.website/writings/co-designing-with-data/"/>
+        <id>https://folio.drouin.website/writings/co-designing-with-data/</id>
+        
+        <content type="html" xml:base="https://folio.drouin.website/writings/co-designing-with-data/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;co-designing-with-data&#x2F;static&#x2F;banner.png&quot; alt=&quot;Screenshot of a portion of the presentation deck used with stakeholders. It says “Enhanced Military Information Research Findings and has the VA seal centered at the top.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;from-ambiguous-data-to-clear-direction&quot;&gt;From ambiguous data to clear direction&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;context-challenge&quot;&gt;Context &amp;amp; Challenge&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;the-problem&quot;&gt;The problem&lt;&#x2F;h3&gt;
+&lt;p&gt;The VA had a hunch that surfacing military service history in veterans’ profiles could help them connect their service to disability claims, but no one understood how this data would actually appear to veterans or what impact it would have. The team had access to the underlying data structure, but couldn’t visualize what veterans would see, much less whether the data was even accurate or useful.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;co-designing-with-data&#x2F;static&#x2F;goals.png&quot; alt=&quot;Screenshot of a presentation slide that lists the research goals of this study: gain a better understanding of veterans’ mental models, review data with veterans, and gather feedback on design mockup.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-users&quot;&gt;The users&lt;&#x2F;h3&gt;
+&lt;p&gt;16 veterans across all six military branches (Air Force, Army, Coast Guard, Marine Corps, Navy, Space Force), with varying service lengths, ranks, and service types. All had filed disability claims. 50% had filed PACT Act claims; 50% had served overseas. Participants ranged from ages 25–65+, with diverse education levels and geographic locations (5 urban, 11 rural).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-constraints&quot;&gt;The constraints&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data quality unknown&lt;&#x2F;strong&gt;: No one had validated VADIR (VA&#x2F;DoD Identity Repository) data against veteran experience&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Stakeholder uncertainty&lt;&#x2F;strong&gt;: VEO and the Profile team couldn’t decide which data elements were safe and useful to display without veteran input&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Emotional stakes&lt;&#x2F;strong&gt;: Veterans’ military records impact their ability to access healthcare and disability benefits – data has consequences&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;research-process&quot;&gt;Research Process&lt;&#x2F;h2&gt;
+&lt;p&gt;I conducted 16 semi-structured interviews with veterans, walked through their actual production data to validate accuracy, and used a mental model mapping activity to understand their priorities.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;co-designing-with-data&#x2F;static&#x2F;methodology.png&quot; alt=&quot;Screenshot of a presentation slide that has a table. The first column lists the research question, and the second column lists the corresponding research method meant to answer each question.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Rather than showing wireframes, I partnered with our backend engineer to pull real VADIR data, convert JSON to CSV, and visualize it on Mural boards so veterans could validate it themselves—centering them as experts in their own experience.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;co-designing-with-data&#x2F;static&#x2F;walkthrough.png&quot; alt=&quot;Screenshot of a presentation slide showing the second part of the research session: a mural board with tons of stickies, as well as names for the data points, like deployment and academy episodes.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;key-findings&quot;&gt;Key findings&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Location &amp;gt; MOS for disability claims&lt;&#x2F;strong&gt;: When connecting service to medical issues, location context was more useful than MOS alone&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Data quality was worse than expected&lt;&#x2F;strong&gt;: Service dates were off; MOS codes were inaccurate or missing; deployment data had duplicates and missing locations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Veterans already have workarounds&lt;&#x2F;strong&gt;: Veterans already use their DD214s, branch-specific records, and their own documentation to file claims.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Fortunately, &lt;strong&gt;safe data did exist&lt;&#x2F;strong&gt;: Branch of service, period of service type (active&#x2F;reserves), and character of discharge were accurate for 13–15 of 15 veterans and genuinely useful.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;design-process&quot;&gt;Design Process&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;research-informed-design-direction&quot;&gt;Research-informed design direction&lt;&#x2F;h3&gt;
+&lt;p&gt;Rather than pursuing the original MVP scope (MOS + dates + duty status), I recommended a &lt;strong&gt;data-quality-first approach&lt;&#x2F;strong&gt;: only surface data elements that are accurate &lt;em&gt;and&lt;&#x2F;em&gt; useful.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Implement&lt;&#x2F;strong&gt;: Period of service type (active&#x2F;reserves) and character of discharge, as both had strong data quality and veterans found them valuable&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Do not implement&lt;&#x2F;strong&gt;: Military occupational specialties—data inconsistencies made them unreliable, and veterans already have better sources (DD214, SURF)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Monitor for future&lt;&#x2F;strong&gt;: Deployment locations - veterans desperately want this, but data quality isn’t there yet; recommend VEO prioritize DoD data improvements&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I presented this not as “data is broken” but as “here’s what we can safely ship now, here’s what needs DoD partnership to fix, and here’s why veterans care about each piece.”&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;solution-validation&quot;&gt;Solution validation&lt;&#x2F;h3&gt;
+&lt;p&gt;Validation happened in real time during research sessions. Veterans validated their own data, articulated their priorities, &lt;em&gt;then&lt;&#x2F;em&gt; evaluated a mockup against those priorities. This meant feedback was grounded in their actual needs, not abstract preferences.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;co-designing-with-data&#x2F;static&#x2F;mockup.png&quot; alt=&quot;Screenshot of a presentation slide depicting two design mock-ups side by side. The First is Military Information in a veteran user’s profile with a button to “see details”. The second is the details expanded.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;final-design&quot;&gt;Final Design&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;design-solutions&quot;&gt;Design solutions&lt;&#x2F;h3&gt;
+&lt;p&gt;Period of service type (active duty, reserves, etc.) and character of discharge were added to the VA.gov Profile military information section, displaying alongside branch of service and service dates.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;design-decisions&quot;&gt;Design decisions&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Why period of service type and discharge?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Accuracy&lt;&#x2F;strong&gt;: 15&#x2F;15 veterans confirmed branch data was correct; 13&#x2F;15 confirmed discharge type was correct&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Utility&lt;&#x2F;strong&gt;: Veterans found value in seeing active vs. inactive reserves status; discharge type matters for benefits eligibility&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Trust&lt;&#x2F;strong&gt;: These data elements are already on DD214s, so veterans can verify them independently&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Why not MOS?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only 3&#x2F;10 veterans said their MOS codes were actually accurate.&lt;&#x2F;li&gt;
+&lt;li&gt;Effective dates were wrong for 5&#x2F;10 veterans, indicating deeper issues.&lt;&#x2F;li&gt;
+&lt;li&gt;Veterans already have better sources (DD214, branch-specific records).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;By showing inaccurate data &lt;em&gt;to the veterans it belonged to&lt;&#x2F;em&gt;, stakeholders immediately understood the stakes. One veteran saw discharge information that contradicted their DD214—information they’d been fighting for years to correct. That emotional understanding led to concrete action: VEO updated their roadmap to prioritize DoD data quality improvements, and the team shipped only the data elements they could confidently stand behind.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;accessibility-inclusive-design&quot;&gt;Accessibility &amp;amp; inclusive design&lt;&#x2F;h3&gt;
+&lt;p&gt;Trauma-informed facilitation prioritized veterans’ interpretation of their own data and made clear that confusing or inaccurate information was a &lt;em&gt;system problem&lt;&#x2F;em&gt;, not their misunderstanding—essential when data represents lived experience and directly impacts access to healthcare and benefits.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;impact-outcomes&quot;&gt;Impact &amp;amp; Outcomes&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;what-shipped&quot;&gt;What shipped&lt;&#x2F;h3&gt;
+&lt;p&gt;Period of service type and character of discharge were added to the VA.gov Profile military information section. All veterans with authenticated VA.gov Profile accounts can now see this information—millions of veterans. Implementation occurred approximately summer 2024, a few months after research concluded in March 2024.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;metrics-results&quot;&gt;Metrics &amp;amp; results&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;==☞ &lt;strong&gt;Recs implemented&lt;&#x2F;strong&gt;:==&lt;br&gt; &lt;br&gt;Both recommended data elements were built and deployed&lt;&#x2F;li&gt;
+&lt;li&gt;==☞ &lt;strong&gt;Roadmap influenced&lt;&#x2F;strong&gt;:==&lt;br&gt; &lt;br&gt;VEO updated their roadmap based on findings, prioritizing efforts to improve data quality&lt;&#x2F;li&gt;
+&lt;li&gt;==☞ &lt;strong&gt;Veterans reached&lt;&#x2F;strong&gt;:==&lt;br&gt; &lt;br&gt;Millions of veterans now have access to more complete military service information in their profiles&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;key-learnings&quot;&gt;Key learnings&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Real data &amp;gt; synthetic data&lt;&#x2F;strong&gt;
+Pulling actual production data and having veterans validate it revealed problems no amount of wireframe testing could have surfaced. One veteran’s inaccurate discharge information made the stakes visceral for stakeholders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Trauma-informed research is essential&lt;&#x2F;strong&gt;
+Several veterans found it traumatizing to see inaccurate information about their own service—especially those whose military careers were cut short by injury. Adjusting facilitation to prioritize their interpretation wasn’t just ethical; it was necessary to maintain trust and get honest feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Partnership is force multiplier&lt;&#x2F;strong&gt;
+I could not have done this research without my backend engineer extracting JSON into workable CSV format. That collaboration—data expertise + research&#x2F;design expertise—made the research possible and credible to stakeholders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Mental models reveal priorities&lt;&#x2F;strong&gt;
+The mapping activity fit real data validation, mental model discovery, &lt;em&gt;and&lt;&#x2F;em&gt; mockup feedback into an hour-long session. Each activity built on the previous one, so feedback was concrete and actionable, not abstract.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;“Do not build” is a valid research outcome&lt;&#x2F;strong&gt;
+Recommending &lt;em&gt;against&lt;&#x2F;em&gt; MOS implementation was only possible because I had data to back it up. By showing inaccurate data to veterans and documenting gaps, I could present the recommendation as “here’s what we can ship safely now, here’s what needs fixing first” rather than “this is a bad idea.”&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] View the real artifacts from this study
+&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;department-of-veterans-affairs&#x2F;va.gov-team&#x2F;blob&#x2F;master&#x2F;products&#x2F;identity-personalization&#x2F;profile&#x2F;Research&#x2F;2024-01-military-info-enhancement-mvp&#x2F;research-plan.md&quot;&gt;Research questions &amp;amp; recruitment plan&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;
+This plan helped everyone on our team get on the same page and make sure that we were asking the right questions, and that we’d get actionable answers. I worked with Perigean, VA.gov’s recruitment partner, to recruit veterans as research participants.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;department-of-veterans-affairs&#x2F;va.gov-team&#x2F;blob&#x2F;master&#x2F;products&#x2F;identity-personalization&#x2F;profile&#x2F;Research&#x2F;2024-01-military-info-enhancement-mvp&#x2F;conversation-guide.md&quot;&gt;Conversation guide&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;
+This is the structure I used for each research session to guide myself through each part.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;department-of-veterans-affairs&#x2F;va.gov-team&#x2F;blob&#x2F;master&#x2F;products&#x2F;identity-personalization&#x2F;profile&#x2F;Research&#x2F;2024-01-military-info-enhancement-mvp&#x2F;research-findings.md&quot;&gt;Findings &amp;amp; recommendations&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;
+These were my initial research findings. The information is quite dense, but my team used this format, and it worked well internally, but it is not as friendly for stakeholders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;department-of-veterans-affairs&#x2F;va.gov-team&#x2F;blob&#x2F;master&#x2F;products&#x2F;identity-personalization&#x2F;profile&#x2F;Research&#x2F;2024-01-military-info-enhancement-mvp&#x2F;research-readout.pdf&quot;&gt;Stakeholder readout&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;
+This is the research readout I did for the VEO stakeholders. I don’t typically add my speaker notes to presentation pdfs, but even in PPT form, the information is dense, and I wanted each slide to stand alone. This came in handy when the stakeholders asked for my research artifacts as they were ready to discuss and approve my recommendations.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Computer-Aided Tagging: Designing for Community Trust</title>
+        <published>2026-03-12T00:00:00+00:00</published>
+        <updated>2026-03-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              P. Moss Drouin
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://folio.drouin.website/writings/designing-for-a-community/"/>
+        <id>https://folio.drouin.website/writings/designing-for-a-community/</id>
+        
+        <content type="html" xml:base="https://folio.drouin.website/writings/designing-for-a-community/">&lt;h1 id=&quot;computer-aided-tagging-designing-for-community-trust&quot;&gt;Computer-Aided Tagging: Designing for Community Trust&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;commons.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Screenshot of the Wikimedia Commons homepage.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;Wikimedia Commons hosts nearly 140 million freely licensed educational media files used across Wikipedia, educational platforms, and news publications worldwide. But in 2016, the platform had a critical limitation: its metadata infrastructure was built on 15-year-old technology designed for text, not multimedia.&lt;&#x2F;p&gt;
+&lt;p&gt;The Alfred P. Sloan Foundation recognized this challenge and awarded Wikimedia Foundation a $3 million grant to transform Commons into a modern, machine-readable platform. The Structured Data on Commons (SDC) project was a three-year initiative to create infrastructure that would enable the global volunteer community to add, edit, and search media using structured metadata.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;wikidata-data-model.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Wikidata&#x27;s data model.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;data.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Example of what data items will live where.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;By 2019, the project had successfully created the technical foundation. Now came the next challenge: how do we help millions of volunteers actually &lt;em&gt;use&lt;&#x2F;em&gt; this infrastructure to add metadata to files?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-challenge-scaling-metadata-addition&quot;&gt;The Challenge: Scaling Metadata Addition&lt;&#x2F;h2&gt;
+&lt;p&gt;The SDC infrastructure was ready, but the team faced a scaling problem: a metadata quota we needed to meet. We used personas to help think this through:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Laszlo&lt;&#x2F;strong&gt;, an experienced Commons admin, was overwhelmed by the number of images needing metadata. Bots could help, but humans needed to choose appropriate tags (impossible to do for millions of files).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Penny&lt;&#x2F;strong&gt;, a casual Commons uploader, wanted to make her images more discoverable, but the existing metadata editing interfaces were too complex. She needed a faster, easier way to contribute.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The core design challenge: &lt;em&gt;How might we use computer vision to suggest tags while making it easy for both casual contributors and experienced curators to add accurate, consistent metadata?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;&#x2F;h2&gt;
+&lt;p&gt;As the lead UX designer on the Structured Data team, I was responsible for researching, designing, and testing the Computer-Aided Tagging (CAT) tool. I was the only full-time designer embedded on our core team, working alongside product managers, engineers, and community relations specialists. I partnered with a senior design researcher on generative research and collaborated extensively with developers on implementation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;understanding-the-community-research-insights&quot;&gt;Understanding the Community: Research &amp;amp; Insights&lt;&#x2F;h2&gt;
+&lt;p&gt;The senior design researcher and I conducted extensive generative research with the Commons community. We conducted:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Expert interviews&lt;&#x2F;strong&gt; with long-time community members, administrators, and power users to understand historical context and pain points&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Comparative analysis&lt;&#x2F;strong&gt; of how other platforms handled suggested metadata and AI-assisted tagging&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Community consultations&lt;&#x2F;strong&gt; to gather feedback on design concepts and validate assumptions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;key-findings&quot;&gt;Key Findings&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;user-flow.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;User flow of one of the primary personas.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Three critical insights emerged from this research:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;1. Precision matters more than volume.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Unlike casual tagging systems, Commons users wanted &lt;em&gt;specific&lt;&#x2F;em&gt; tags. If an image showed a poodle, they wanted “poodle,” not “dog.” If it showed a specific painting, they wanted the painting identified, not just “painting.” Broad, generic tags were seen as less helpful than no tags at all.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;2. The community was skeptical of automation but open to verification.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Human verification wasn’t optional, it was essential to community buy-in. But if verification was easy and transparent, the community was willing to work with AI-assisted tools.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;3. Different user types had different needs.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Casual uploaders wanted quick, easy ways to add a few tags to their own work. Experienced curators wanted tools that could help them work through backlogs efficiently without creating additional work. Bot developers wanted APIs and data structures they could build on top of.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;design-approach-building-on-community-expertise&quot;&gt;Design Approach: Building on Community Expertise&lt;&#x2F;h2&gt;
+&lt;p&gt;Based on my research, I worked with the team to establish design principles that would guide our work:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Human verification first.&lt;&#x2F;strong&gt; Tags would never be automatically added. Users would review each suggestion and confirm or reject it.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Respect expertise.&lt;&#x2F;strong&gt; The interface should work &lt;em&gt;with&lt;&#x2F;em&gt; the community’s existing knowledge and workflows, not replace them.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Transparency.&lt;&#x2F;strong&gt; Users should understand where suggestions came from and why they were made.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;design-process&quot;&gt;Design Process&lt;&#x2F;h3&gt;
+&lt;p&gt;I created interactive prototypes in Sketch and worked closely with developers to build functional prototypes for testing. I conducted multiple rounds of usability testing:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Testing with community members:&lt;&#x2F;strong&gt; I observed how experienced Commons contributors interacted with the interface, gathering feedback on terminology, layout, and workflows.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Testing with new users:&lt;&#x2F;strong&gt; Using UserTesting.com, I tested designs with people unfamiliar with Commons to ensure the interface was accessible to casual contributors.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Community consultations:&lt;&#x2F;strong&gt; I facilitated open feedback sessions where I presented design concepts and gathered input on everything from interface layouts to terminology choices.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;tag-icons.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Icon explorations for &quot;tags.&quot;&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;folio.drouin.website&#x2F;writings&#x2F;designing-for-a-community&#x2F;static&#x2F;tag-interactions.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Example of tag interactions.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h3 id=&quot;key-design-decisions&quot;&gt;Key Design Decisions&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;1. Opt-in design with notifications&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Users could opt into the tool through their preferences or during upload. Once they opted in, they’d receive notifications when their uploads were ready for tagging. This ensured engaged community members could monitor quality while respecting user autonomy.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;2. Simple confirm&#x2F;reject&#x2F;skip workflow&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Rather than forcing users to make a decision on every tag, I designed a workflow where users could:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Confirm&lt;&#x2F;strong&gt; a tag they agreed with&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reject&lt;&#x2F;strong&gt; a tag they disagreed with&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Skip&lt;&#x2F;strong&gt; a tag they weren’t sure about&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This reduced friction and made the task feel less overwhelming.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;3. Visible feedback on quality&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I designed the interface to show users which tags were being accepted and rejected by the community, creating a feedback loop that helped improve the model over time.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;4. Mobile-first design&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I designed the interface to work on mobile devices, recognizing that many community members contribute from phones and tablets.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;5. Privacy-first architecture&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;No personal information (IP addresses, usernames) was sent to the computer vision provider. All suggestions were stored separately until human confirmation. This addressed community concerns about data privacy and corporate involvement.&lt;&#x2F;p&gt;
+&lt;div style=&quot;display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;&quot;&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;static&#x2F;2-Suggested-tags-mobile.png&quot; alt=&quot;Suggested tags&quot;&gt;
+    &lt;figcaption&gt;Computer-suggested tags.&lt;&#x2F;figcaption&gt;
+  &lt;&#x2F;figure&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;static&#x2F;4-Reviewed-tags-mobile.png&quot; alt=&quot;Reviewed tags&quot;&gt;
+    &lt;figcaption&gt;Human-chosen tags.&lt;&#x2F;figcaption&gt;
+  &lt;&#x2F;figure&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;static&#x2F;6-empty-state-mobile.png&quot; alt=&quot;Empty state&quot;&gt;
+    &lt;figcaption&gt;End of flow confirmation.&lt;&#x2F;figcaption&gt;
+  &lt;&#x2F;figure&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;results-enabling-community-contribution-at-scale&quot;&gt;Results: Enabling Community Contribution at Scale&lt;&#x2F;h2&gt;
+&lt;p&gt;The Computer-Aided Tagging tool saw meaningful adoption:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;5,809 users&lt;&#x2F;strong&gt; made edits via the tool by February 2022&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;341,957 files&lt;&#x2F;strong&gt; had edits made through Computer-Aided Tagging&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;72% of edits&lt;&#x2F;strong&gt; came from the file uploaders themselves, showing that casual users found the tool valuable for tagging their own work&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The tool successfully lowered the barrier to entry for casual contributors while providing a workflow that experienced curators could integrate into their work.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;community-built-tools-ecosystem&quot;&gt;Community-Built Tools &amp;amp; Ecosystem&lt;&#x2F;h3&gt;
+&lt;p&gt;The success of the SDC infrastructure and CAT tool inspired the community to build additional tools:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ISA Tool&lt;&#x2F;strong&gt; - A caption and tagging tool for organized campaigns&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;AC&#x2F;DC (Add to Commons&#x2F;Descriptive Claims)&lt;&#x2F;strong&gt; - Batch statement addition tool&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;QuickStatements integration&lt;&#x2F;strong&gt; - Bulk metadata editing capabilities&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These community-developed tools demonstrated that we had successfully created infrastructure that empowered volunteers to build solutions addressing their specific needs.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;broader-impact&quot;&gt;Broader Impact&lt;&#x2F;h3&gt;
+&lt;p&gt;The Computer-Aided Tagging tool was part of a larger success story. The Structured Data on Commons project:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Exceeded the target metric&lt;&#x2F;strong&gt; of 5 million files with structured metadata&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Secured follow-up funding&lt;&#x2F;strong&gt; from the Alfred P. Sloan Foundation for “Structured Data Across Wikimedia,” extending the work to Wikipedia itself&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Created reusable design patterns&lt;&#x2F;strong&gt; that other Wikimedia projects could build on&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The project demonstrated that complex technical infrastructure can be made accessible through user-centered design, community collaboration, and iterative development.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;key-learnings&quot;&gt;Key Learnings&lt;&#x2F;h2&gt;
+&lt;p&gt;This project taught me several important lessons about designing for communities:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;1. Community expertise is non-negotiable.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The Commons community had spent years developing sophisticated practices around metadata and organization. Successful design meant respecting that expertise and building &lt;em&gt;with&lt;&#x2F;em&gt; the community, not for them. The most valuable feedback came from experienced community members who understood the nuances of what made metadata useful.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;2. Verification is a feature, not a bug.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Rather than trying to make the AI perfect, I designed the interface around human verification. This turned out to be a strength: it gave the community control, built trust, and created a feedback loop that could improve the system over time. Users were willing to work with AI-assisted tools as long as they had the final say.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;3. Different user types need different interfaces.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Casual uploaders and experienced curators had different needs. Rather than designing one interface for everyone, I designed progressive disclosure that started simple but allowed power users to access more advanced options. This made the tool accessible to both groups.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;4. Iteration with the community is essential.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The most valuable insights came from testing with actual community members, not just usability testing with general users. Community members understood the context, the standards, and the workflows in ways that outsiders couldn’t. Regular community consultations weren’t just good practice, they were essential to getting the design right.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;5. Design is about enabling, not controlling.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The goal wasn’t to make the community tag images a certain way. It was to make it &lt;em&gt;easier&lt;&#x2F;em&gt; for them to do what they already wanted to do. The best design got out of the way and let the community’s expertise shine through.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;continuing-the-work&quot;&gt;Continuing the Work&lt;&#x2F;h2&gt;
+&lt;p&gt;The Computer-Aided Tagging tool was one piece of a larger vision: making human knowledge more discoverable across languages and cultures. The success of this project led to follow-up funding and new initiatives:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Structured Data Across Wikimedia&lt;&#x2F;strong&gt; extended structured metadata work to Wikipedia itself&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Community-built tools&lt;&#x2F;strong&gt; continue to leverage the infrastructure we created&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;New research&lt;&#x2F;strong&gt; is exploring how to scale metadata addition even further&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,171 @@
+<!doctype html><html data-theme=light lang=en xmlns=http://www.w3.org/1999/xhtml><head><meta charset=UTF-8><meta content="Portfolio built with Zola." name=description><meta content="width=device-width,initial-scale=1" name=viewport><meta content=#df6f00 name=theme-color><meta content=#e56e19 media=(prefers-color-scheme:dark) name=theme-color><meta content="default-src 'none';font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;img-src 'self' https: data:;media-src 'self' https:;form-action 'self' https://formspree.io;;connect-src 'self' https://drouin.goatcounter.com/count 'self' https:;script-src 'self' https://drouin.goatcounter.com/count 'self' https:" http-equiv=content-security-policy><title>Style Guide - P. Moss Drouin</title><link href=https://folio.drouin.website/writings/style-guide/ rel=canonical><link href=https://folio.drouin.website/favicon.png rel=icon type=image/png><link href=https://folio.drouin.website/apple-touch-icon.png rel=apple-touch-icon sizes=180x180 type=image/png><style>:root{--accent-color:#df6f00}[data-theme=dark]{--accent-color:#e56e19}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent-color:#e56e19}}</style><link href=https://folio.drouin.website/style.css rel=stylesheet><link href=https://folio.drouin.website/custom-fonts.css rel=stylesheet><script defer src=https://folio.drouin.website/closable.js></script><script defer src=https://folio.drouin.website/copy-button.js></script><script data-goatcounter=https://drouin.goatcounter.com/count defer src=https://folio.drouin.website/count.js></script><script defer src=https://folio.drouin.website/elasticlunr.min.js></script><script defer src=https://folio.drouin.website/search-elasticlunr.js></script><script defer src=https://folio.drouin.website/theme-switcher.js></script><meta content="P. Moss Drouin" property=og:site_name><meta content="Style Guide - P. Moss Drouin" property=og:title><meta content=https://folio.drouin.website/writings/style-guide/ property=og:url><meta content="Style Guide for CSS tweaking." property=og:description><meta content=https://folio.drouin.website/card.png property=og:image><meta content=en_US property=og:locale><body><header id=site-nav><nav><a href=#main-content tabindex=0> Skip to Main Content </a><ul><li id=home><a href=https://folio.drouin.website> <i class=icon></i>P. Moss Drouin</a><li class=divider><li><details class=closable><summary>Links</summary> <ul><li><a href=https://folio.drouin.website/about/>About</a><li><a href=https://folio.drouin.website/work/>Work</a><li><a href=https://folio.drouin.website/writings/>Case studies</a><li><a href=https://folio.drouin.website/colophon/>Colophon</a><li><a href=https://folio.drouin.website/contact/>Contact</a></ul></details><li id=search><button class=circle id=search-toggle title=Search><i class=icon></i></button><li id=theme-switcher><details class=closable><summary class=circle title=Theme><i class=icon></i></summary> <ul><li><button title="Switch to Light Theme" class=circle id=theme-light><i class=icon></i></button><li><button title="Switch to Dark Theme" class=circle id=theme-dark><i class=icon></i></button><li><button title="Use System Theme" class=circle id=theme-system><i class=icon></i></button></ul></details></ul></nav><div id=search-container><label class=visually-hidden for=search-bar>Search</label><input placeholder="Search for…" autocomplete=off disabled id=search-bar type=search><div id=search-results-container><div id=search-results></div></div></div></header><main id=main-content><article><div id=heading><p><small> <time datetime=" 2026-03-12T00:00:00+00:00">Published on March 12, 2026</time></small><h1>Style Guide</h1><p><small><span>3 minutes read</span><span> • </span></small><ul class=tags><li><a class=tag href=https://folio.drouin.website/tags/css/>CSS</a></ul></div><div id=buttons-container><a title="Go to Top" href=#top id=go-to-top><i class=icon></i></a><a href="https://shareopenly.org/share/?url=https://folio.drouin.website/writings/style-guide/&text=Style%20Guide%20for%20CSS%20tweaking." id=share title=Share><i class=icon></i></a></div><blockquote class=tip><p class=alert-title><i class=icon></i>Tip<p>Recommended banner dimensions are 2:1 aspect ratio and 1920x960 resolution.<br> Other sizes will also work, but will be cut off at the bottom/won’t be high enough.</blockquote><h1 id=heading-1>Heading 1</h1><p>This is a paragraph with some body text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<h2 id=heading-2>Heading 2</h2><p>This is another paragraph. You can have <strong>bold text</strong>, <em>italic text</em>, <em><strong>bold and italic</strong></em>, and <code>inline code</code> mixed in with regular text.<h3 id=heading-3>Heading 3</h3><h4 id=heading-4>Heading 4</h4><h5 id=heading-5>Heading 5</h5><h6 id=heading-6>Heading 6</h6><h2 id=emphasis-and-links>Emphasis and Links</h2><p>Here’s a <a href=https://google.com rel=external>link to Google</a> and here’s one to an <a href=https://folio.drouin.website/writings/>internal page</a>.<p>You can also use <strong>strong emphasis</strong> and <em>regular emphasis</em> throughout your text.<h2 id=unordered-lists>Unordered Lists</h2><ul><li>Item one<li>Item two<li>Item three <ul><li>Nested item 3a<li>Nested item 3b <ul><li>Deeply nested item</ul></ul><li>Item four</ul><h2 id=ordered-lists>Ordered Lists</h2><ol><li>First item<li>Second item<li>Third item <ol><li>Nested item 3a<li>Nested item 3b</ol><li>Fourth item</ol><h2 id=checklists>Checklists</h2><ul><li><input checked disabled type=checkbox> Completed task<li><input checked disabled type=checkbox> Another completed task<li><input disabled type=checkbox> Incomplete task<li><input disabled type=checkbox> Another incomplete task</ul><h2 id=code-blocks>Code Blocks</h2><h3 id=rust>Rust</h3><pre><code data-lang=rust>fn main() {
+    let greeting = "Hello, world!";
+    println!("{}", greeting);
+    
+    for i in 1..=5 {
+        println!("Count: {}", i);
+    }
+}
+
+Image by &lt;a href="https://pixabay.com/users/noname_13-2364555/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1685924">NoName_13&lt;/a> from &lt;a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1685924">Pixabay&lt;/a>
+
++++
+title = "Demo Page"
+[extra]
+go_to_top = true
+styles = ["demo/demo.css"]
+scripts = ["demo/demo.js"]
+katex = true
+archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
+trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
+disclaimer = """
+- All tricks in this page are performed by the lab boys, don't try this at home.
+- Don't expose yourself to 4000° kelvin.
+- Don't take party escort submission position.
+- Don't interact with asbestos and moon rocks.
+"""
++++
+
+## Markdown
+
+Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time~~***.
+
+[Link to another page](@/demo/page.md).
+
+There should be whitespace between paragraphs[^1].
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+This is a normal paragraph[^2] following a header.
+
+</code></pre><p>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.<pre><code>
+> "Original content is original only for a few seconds before getting old"
+> > Rule #21 of the internet
+
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+- Item 3
+- `Item 4`
+
+1. Perform step #1
+2. Proceed to step #2
+3. Conclude with step #3
+
+- [ ] Milk
+- [x] Eggs
+- [x] Flour
+- [ ] Coffee
+- [x] Combustible lemons
+
+[![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)](https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg)
+
+| Mare         | Rating            | Additional info  |
+| :----------- | :---------------- | :--------------- |
+| Fluttershy   | Best pone         | Shy and adorable |
+| Apple Jack   | Good pone         | Honest and nice  |
+| Pinkie Pie   | Fun pone          | Parties and ADHD |
+| Twilight     | Main pone         | Neeerd           |
+| Rainbow Dash | Yes               | Looks badass     |
+| Rarity       | Fancy pone        | Generous         |
+| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
+
+```rust
+let highlight = true;
+</code></pre><pre><code data-lang=scss>pre mark {
+  // If you want your highlights to take the full width
+  display: block;
+  color: currentcolor;
+}
+pre table td:nth-of-type(1) {
+  // Select a colour matching your theme
+  color: #6b6b6b;
+  font-style: italic;
+}
+</code></pre><hr><h2 id=extra>Extra</h2><h3 id=katex>KaTeX</h3><p>Duckquill can render LaTeX using the <a href=https://katex.org rel=external>KaTeX</a> library. It can be enabled using the <code>extra.katex</code> config variable.<pre><code data-lang=latex>$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+</code></pre><p>$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$$<pre><code data-lang=latex>$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+</code></pre><p>$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$<h3 id=shortcodes>Shortcodes</h3><p>Duckquill provides a few useful <a href=https://www.getzola.org/documentation/content/shortcodes/ rel=external>shortcodes</a> that simplify some tasks. They can be used on all pages.<h4 id=alerts>Alerts</h4><p><a href=https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts rel=external>GitHub-style</a> alerts. Simply wrap the text of desired alert inside the shortcode to get the desired look.<p>Available alert types:<ul><li><code>note</code>: Useful information that users should know, even when skimming content.<li><code>tip</code>: Helpful advice for doing things better or more easily.<li><code>important</code>: Key information users need to know to achieve their goal.<li><code>warning</code>: Urgent info that needs immediate user attention to avoid problems.<li><code>caution</code>: Advises about risks or negative outcomes of certain actions.</ul><pre><code data-lang=jinja2>{% alert(note=true) %}
+-> Alert text &lt;-
+{% end %}
+</code></pre><blockquote class=note><p class=alert-title><i class=icon></i>Note<p>Useful information that users should know, even when skimming content.</blockquote><blockquote class=tip><p class=alert-title><i class=icon></i>Tip<p>Helpful advice for doing things better or more easily.</blockquote><blockquote class=important><p class=alert-title><i class=icon></i>Important<p>Key information users need to know to achieve their goal.</blockquote><blockquote class=warning><p class=alert-title><i class=icon></i>Warning<p>Urgent info that needs immediate user attention to avoid problems.</blockquote><blockquote class=caution><p class=alert-title><i class=icon></i>Caution<p>Advises about risks or negative outcomes of certain actions.</blockquote><h4 id=images-and-videos>Images and Videos</h4><p>By default images and videos come with some generic styling, such as rounded corners and shadow. To fine-tune these, you can use shortcodes with different variable combinations.<p>Available variables are:<ul><li><code>url</code>: URL to an image.<li><code>url_min</code>: URL to compressed version of an image, original can be opened by clicking on the image.<li><code>alt</code>: Alt text, same as if the text were inside square brackets in Markdown.<li><code>full</code>: Forces image to be full-width.<li><code>full_bleed</code>: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.<li><code>start</code>: Float image to the start of paragraph and scale it down.<li><code>end</code>: Float image to the end of paragraph and scale it down.<li><code>pixels</code>: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.<li><code>transparent</code>: Removes rounded corners and shadow, useful for images with transparency.<li><code>no_hover</code>: Removes zoom on hover.<li><code>spoiler</code>: Blurs image until hovered over/pressed on, useful for plot rich game screenshots.<li><code>spoiler</code> with <code>solid</code>: Ditto, but makes the image completely hidden.</ul><pre><code data-lang=jinja2>{{ image(url="image.png", alt="This is an image", no_hover=true) }}
+</code></pre><figure><img alt="Portal Gun blueprint" class=no-hover src=https://i1.theportalwiki.net/img/2/23/Ashpd_blueprint.jpg><figcaption>Image with an alt text and without zoom on hover</figcaption></figure><figure><a href=https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg> <img alt="The gravestone of J.P.G." class=no-hover src=https://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_010.jpg> </a><figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption></figure><figure><img alt="Portal Gun blueprint" class=spoiler src=https://files.catbox.moe/lk7nee.jpg><figcaption>Image with an alt text, hidden behind a spoiler</figcaption></figure><p>Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g. such images will render normally in any Markdown editor, opposed to the Zola shortcodes.<ul><li><code>#full</code>: Forces image to be full-width.<li><code>#full-bleed</code>: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.<li><code>#start</code>: Float image to the start of paragraph and scale it down.<li><code>#end</code>: Float image to the end of paragraph and scale it down.<li><code>#pixels</code>: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.<li><code>#transparent</code>: Removes rounded corners and shadow, useful for images with transparency.<li><code>#no-hover</code>: Removes zoom on hover.<li><code>#spoiler</code>: Blurs image until hovered over/pressed on, useful for plot rich game screenshots.<li><code>#spoiler</code> with <code>#solid</code>: Ditto, but makes the image completely hidden.</ul><br><figure><p><a href=https://containertoolbx.org rel=external><img alt="Toolbx header image" src=https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover></a><figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption></figure><br><p><img alt="1966 Ford Mustang coupe white" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1966_Ford_Mustang_coupe_white_003.jpg/320px-1966_Ford_Mustang_coupe_white_003.jpg#start> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.<p><br> <a href=https://unsplash.com/photos/a-mountain-lake-surrounded-by-trees-and-snow-CqTOTZh5vrs rel=external><img alt="Picture of the magnificent lej da staz just before sunrise in october" src="https://images.unsplash.com/photo-1635410773896-da585e1fe138?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full-bleed"></a><p>For videos it’s all the same except for a few differences: <code>no_hover</code> and <code>url_min</code> variables are not available.<p>Additionally, the following <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#attributes rel=external>attributes</a> can be set:<ul><li><code>autoplay</code>: Start playing the video automatically.<li><code>controls</code>: Display video controls such as volume control, seeking and pause/resume.<li><code>loop</code>: Play the video again once it ends.<li><code>muted</code>: Turn off the audio by default.<li><code>playsinline</code>: Prevent the video from playing in fullscreen by default (depends on the browser).</ul><pre><code data-lang=jinja2>{{ video(url="video.webm", alt="This is a video", controls=true) }}
+</code></pre><figure><video aria-title="Red flower wakes up" controls src=https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm></video><figcaption>WebM video example from MDN</figcaption></figure><figure><video aria-title="Duckling preening" class=full-bleed controls src=https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm></video><figcaption>Duckling preening</figcaption></figure><h4 id=crt>CRT</h4><p>Alright, this one doesn’t simplify anything, it just adds a CRT-like effect around Markdown code blocks.<pre><code data-lang=jinja2>{% crt() %}
+-> Markdown code block &lt;-
+{% end %}
+</code></pre><div class="crt scanlines" aria-hidden=true><pre><code> _____________________________________________
+|.'',        Public_Library_Halls         ,''.|
+|.'.'',                                 ,''.'.|
+|.'.'.'',                             ,''.'.'.|
+|.'.'.'.'',                         ,''.'.'.'.|
+|.'.'.'.'.|                         |.'.'.'.'.|
+|.'.'.'.'.|===;                 ;===|.'.'.'.'.|
+|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|
+|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|
+|,',',',',|---|',|'|???????|'|,'|---|,',',',',|
+|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|','   /%%%\   ','|---|.'.'.'.'.|
+|.'.'.'.'.|===:'    /%%%%%\    ':===|.'.'.'.'.|
+|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|
+|.'.'.'.','       /%%%%%%%%%\       ','.'.'.'.|
+|.'.'.','        /%%%%%%%%%%%\        ','.'.'.|
+|.'.','         /%%%%%%%%%%%%%\         ','.'.|
+|.','          /%%%%%%%%%%%%%%%\          ','.|
+|;____________/%%%%%Spicer%%%%%%\____________;|
+</code></pre></div><p>There’s also a <code>cursor</code> class that you can add to a span with e.g. <code>█</code> character to simulate the terminal cursor. It doesn’t work from inside Markdown code blocks though.<h4 id=youtube>YouTube</h4><p>Allows to embed a YouTube video using youtube-nocookie.<p>Available variables are:<ul><li><code>autoplay</code>: Whether the video should autoplay.<li><code>start</code>: On which second video should start.</ul><pre><code data-lang=jinja2>{{ youtube(id="0Da8ZhKcNKQ") }}
+</code></pre><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class=youtube-embed referrerpolicy=strict-origin-when-cross-origin src=https://www.youtube-nocookie.com/embed/0Da8ZhKcNKQ></iframe><h4 id=vimeo>Vimeo</h4><p>Allows to embed a Vimeo video.<p>Available variables are:<ul><li><code>autoplay</code>: Whether the video should autoplay.</ul><pre><code data-lang=jinja2>{{ vimeo(id="869483483") }}
+</code></pre><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class=vimeo-embed src=https://player.vimeo.com/video/869483483></iframe><h4 id=mastodon>Mastodon</h4><p>Allows to embed a Mastodon post.<p>Available variables are:<ul><li><code>host</code>: The instance on which the post resides. If not set, it will fallback to the one set in the <code>[extra.comments]</code> section of <code>config.toml</code>.<li><code>user</code>: The poster. If not set, it will fallback to the one set in the <code>[extra.comments]</code> section of <code>config.toml</code>.<li><code>id</code>: The ID of the post, usually at the end of the URL.</ul><pre><code data-lang=jinja2>{{ mastodon(host="toot.community", user="sungsphinx", id="111789185826519979") }}
+</code></pre><iframe class=mastodon-embed src=https://toot.community/@sungsphinx/111789185826519979/embed></iframe><h3 id=description-list-dl>Description List (<code>&lt;dl></code>)</h3><pre><code data-lang=html>&lt;dl>
+&lt;dt>Something&lt;/dt>
+&lt;dd>And its description&lt;/dd>
+&lt;/dl>
+</code></pre><dl><dt>Name<dd>Godzilla<dt>Born<dd>1952<dt>Birthplace<dd>Japan<dt>Color<dd>Green</dl><h3 id=form-input-input>Form Input (<code>&lt;input></code>)</h3><pre><code data-lang=html>&lt;input type="checkbox" />
+&lt;label>Checkbox&lt;/label>
+</code></pre><ul><li><input type=checkbox> <label> Milk</label><li><input type=checkbox> <label> Eggs</label><li><input type=checkbox> <label> Flour</label><li><input checked type=checkbox> <label> Coffee</label><li><input disabled type=checkbox> <label> Combustible lemons</label></ul><p>With <code>switch</code> class:<pre><code data-lang=html>&lt;input class="switch" type="checkbox" />
+&lt;label>Checkbox&lt;/label>
+</code></pre><ul><li><input class=switch type=checkbox> <label> Milk</label><li><input class=switch type=checkbox> <label> Eggs</label><li><input class=switch type=checkbox> <label> Flour</label><li><input checked class=switch type=checkbox> <label> Coffee</label><li><input class=switch disabled type=checkbox> <label> Combustible lemons</label></ul><p>With <code>switch</code> and <code>big</code> classes:<pre><code data-lang=html>&lt;input class="switch big" type="checkbox" />
+&lt;label>Checkbox&lt;/label>
+</code></pre><ul><li><input class="switch big" type=checkbox> <label> Milk</label><li><input class="switch big" type=checkbox> <label> Eggs</label><li><input class="switch big" type=checkbox> <label> Flour</label><li><input class="switch big" checked type=checkbox> <label> Coffee</label><li><input class="switch big" disabled type=checkbox> <label> Combustible lemons</label></ul><p>With <code>radio</code> type:<pre><code data-lang=html>&lt;input type="radio" name="test" />
+&lt;label>Radio&lt;/label>
+</code></pre><ul><li><input name=test type=radio> <label> Milk</label><li><input name=test type=radio> <label> Eggs</label><li><input name=test type=radio> <label> Flour</label><li><input checked name=test type=radio> <label> Coffee</label><li><input disabled name=test type=radio> <label> Combustible lemons</label></ul><p>With <code>color</code> type:<pre><code data-lang=html>&lt;label>Color:&lt;/label>
+&lt;input type="color" value="#000000" />
+</code></pre><p><label for=color>Color:</label> <input id=color type=color value=#b57edc><p><label for=color>Disabled:</label> <input disabled id=color type=color value=#b57edc><p>With <code>range</code> type:<pre><code data-lang=html>&lt;input type="range" max="100" value="33">
+</code></pre><input id=range max=100 type=range value=33><small id=range-value></small><h3 id=figure-captions-figcaption>Figure Captions (<code>&lt;figcaption></code>)</h3><pre><code data-lang=markdown>&lt;figure>
+  -> Whatever content &lt;-
+  &lt;figcaption>Caption of content above&lt;/figcaption>
+&lt;/figure>
+</code></pre><figure><p><img alt="The Office" src=https://i.ibb.co/MPDJRsT/ImMAXM3.png><figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption></figure><h3 id=accordion-details>Accordion (<code>&lt;details></code>)</h3><pre><code data-lang=markdown>&lt;details>
+  &lt;summary>Accordion title&lt;/summary>
+  -> Contents here &lt;-
+&lt;/details>
+</code></pre><details><summary>Reveal accordion</summary> <p>Get it? I know, it’s an awful pun. <img alt="Piano Accordion" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PianoAccordeon.jpg/916px-PianoAccordeon.jpg#transparent#no-hover></p></details><h3 id=side-comment-small>Side Comment (<code>&lt;small></code>)</h3><pre><code data-lang=html>&lt;small>Small, cute text that doesn't catch attention.&lt;/small>
+</code></pre><p><small>Small, cute text that doesn’t catch attention.</small><h3 id=abbreviation-abbr>Abbreviation (<code>&lt;abbr></code>)</h3><pre><code data-lang=html>&lt;abbr title="American Standard Code for Information Interchange">ASCII&lt;/abbr>
+</code></pre><p>The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art is awesome!<h3 id=aside-aside>Aside (<code>&lt;aside></code>)</h3><pre><code data-lang=html>&lt;aside>
+
+-> Contents here &lt;-
+&lt;/aside>
+</code></pre><aside><p>Quill and a parchment</p><img alt="Quill and a parchment" class="transparent no-hover" src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg/326px-%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg style=border-radius:0;margin-block-end:0></aside><p>A quill is a writing tool made from a moulted flight feather (preferably a primary wing-feather) of a large bird. Quills were used for writing with ink before the invention of the dip pen, the metal-nibbed pen, the fountain pen, and, eventually, the ballpoint pen.<p>As with the earlier reed pen (and later dip pen), a quill has no internal ink reservoir and therefore needs to periodically be dipped into an inkwell during writing. The hand-cut goose quill is rarely used as a calligraphy tool anymore because many papers are now derived from wood pulp and would quickly wear a quill down. However it is still the tool of choice for a few scribes who have noted that quills provide an unmatched sharp stroke as well as greater flexibility than a steel pen.<h3 id=keyboard-input-kbd>Keyboard Input (<code>&lt;kbd></code>)</h3><pre><code data-lang=html>&lt;kbd>⌘ Command&lt;/kbd>.
+</code></pre><p>To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.<h3 id=mark-text-mark>Mark Text (<code>&lt;mark></code>)</h3><pre><code data-lang=html>&lt;mark>Marked text&lt;/mark>
+</code></pre><p>You know what? I’m gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even <strong>bold</strong> is not enough.<h3 id=deleted-and-inserted-text-del-and-ins>Deleted and Inserted Text (<code>&lt;del></code> and <code>&lt;ins></code>)</h3><pre><code data-lang=html>&lt;del>Something deleted&lt;/del> &lt;ins>Something added&lt;/ins>
+</code></pre><p><del>Text deleted</del> <ins>Text added</ins><h3 id=progress-indicator-progress>Progress Indicator (<code>&lt;progress></code>)</h3><pre><code data-lang=html>&lt;progress>&lt;/progress>
+&lt;progress value="33" max="100">&lt;/progress>
+</code></pre><p><progress></progress> <progress max=100 value=33></progress><h3 id=sample-output-samp>Sample Output (<code>&lt;samp></code>)</h3><pre><code data-lang=html>&lt;samp>Sample Output&lt;/samp>
+</code></pre><p><samp>Sample Output</samp><h3 id=inline-quotation-q>Inline Quotation (<code>&lt;q></code>)</h3><pre><code data-lang=html>&lt;q>Someone said something&lt;/q>
+</code></pre><p>Blah blah <q>Inline Quote</q> hmm.<h3 id=unarticulated-annotation-u>Unarticulated Annotation (<code>&lt;u></code>)</h3><pre><code data-lang=html>&lt;u>Gmarrar mitsakes&lt;/u>
+</code></pre><p><u>Yeet</u> the <u>sus</u> drip while <u>vibing</u> with the <u>TikTok</u> <u>fam</u> on a cap-free boomerang.<h3 id=external-links>External Links</h3><pre><code data-lang=html>&lt;a class="external" href="https://example.org">External link&lt;/a>
+</code></pre><p><a class=external href=https://example.org>Link to site</a><h3 id=spoilers>Spoilers</h3><pre><code data-lang=html>&lt;span class="spoiler">Some spoiler&lt;/span>
+</code></pre><p>You know, <span class=spoiler>Duckquill is a pretty dumb name.</span> I know, crazy.<p>With <code>solid</code> class:<pre><code data-lang=html>&lt;span class="spoiler solid">Some spoiler&lt;/span>
+</code></pre><p>You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I know, crazy.<h3 id=buttons-dialog>Buttons Dialog</h3><pre><code data-lang=html.j2>&lt;div class="buttons">
+  &lt;a href="#top">Go to Top&lt;/a>
+  &lt;a class="colored external" href="https://example.org">Example&lt;/a>
+&lt;/div>
+</code></pre><div class=buttons><a href=#top>Go to Top</a><a class="colored external" href=https://example.org>Example</a></div><p>With <code>centered</code> and <code>big</code> classes:<pre><code data-lang=html.j2>&lt;div class="buttons centered">
+  &lt;button class="big colored">Do Something…&lt;/button>
+&lt;/div>
+</code></pre><div class="buttons centered"><button class="big colored">Do Something…</button></div><div id=color-picker-container><small>Accent color:</small><input id=color-picker-light type=color value=#ff7800><label for=color-picker-light>Light theme</label><br><input id=color-picker-dark type=color value=#ffa348><label for=color-picker-dark>Dark theme</label></div><section class=footnotes><ol class=footnotes-list></ol></section></article><hr><nav id=post-nav><a class="post-nav-item post-nav-next" href=https://folio.drouin.website/writings/designing-for-a-community/> <div class=nav-arrow>Next</div> <span class=post-title>Computer-Aided Tagging: Designing for Community Trust</span> </a></nav><span class=hidden id=copy-code-text>Copy Code</span><span class=hidden id=search-index>https://folio.drouin.website/search_index.en.json</span><span class=hidden id=more-matches-text>$MATCHES more matches</span></main><footer id=site-footer><nav><ul><li><a href=https://folio.drouin.website/about/>About</a><li><a href=https://folio.drouin.website/work/>Work</a><li><a href=https://folio.drouin.website/writings/>Case studies</a><li><a href=https://folio.drouin.website/colophon/>Colophon</a><li><a href=https://folio.drouin.website/contact/>Contact</a></ul></nav><p>© P. Moss Drouin, 2026<ul id=socials><li><a rel=" me" href=https://www.linkedin.com/in/drouinp/ title=LinkedIn> <i style="--icon:url(&#34;data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3ELinkedIn%3C/title%3E%3Cpath d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z'/%3E%3C/svg%3E&#34;)" class=icon></i> <span>LinkedIn</span> </a><li><a rel=" me" href=https://github.com/gathering-moss title=GitHub> <i style="--icon:url(&#34;data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34;)" class=icon></i> <span>GitHub</span> </a></ul></footer>
