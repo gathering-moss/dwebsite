@@ -1,5 +1,5 @@
 +++
-title = "Computer-Aided Tagging: Designing for Community Trust"
+title = "Co-designing computer-aided tools"
 description = "Transforming metadata capabilities with and for a global community."
 date = 2026-03-12
 [taxonomies]
