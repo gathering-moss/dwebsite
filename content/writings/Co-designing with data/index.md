@@ -80,25 +80,27 @@ Trauma-informed facilitation prioritized veterans' interpretation of their own d
 
 ### What shipped
 Period of service type and character of discharge were added to the VA.gov Profile military information section. All veterans with authenticated VA.gov Profile accounts can now see this information—millions of veterans. Implementation occurred approximately summer 2024, a few months after research concluded in March 2024.
+
 ### Metrics & results
-- ☞ **Recs implemented**: Both recommended data elements were built and deployed
-- ☞ **Roadmap influenced**: VEO updated their roadmap based on findings, prioritizing efforts to improve data quality
-- ☞ **Veterans reached**: Millions of veterans now have access to more complete military service information in their profiles
+☞ **Recs implemented**: Both recommended data elements were built and deployed
+☞ **Roadmap influenced**: VEO updated their roadmap based on findings, prioritizing efforts to improve data quality
+☞ **Veterans reached**: Millions of veterans now have access to more complete military service information in their profiles
+
 ### Key learnings
 
-#### **Real data > synthetic data**
+#### Real data > synthetic data
 Pulling actual production data and having veterans validate it revealed problems no amount of wireframe testing could have surfaced. One veteran's inaccurate discharge information made the stakes visceral for stakeholders.
 
-#### **Trauma-informed research is essential**
+#### Trauma-informed research is essential
 Several veterans found it traumatizing to see inaccurate information about their own service—especially those whose military careers were cut short by injury. Adjusting facilitation to prioritize their interpretation wasn't just ethical; it was necessary to maintain trust and get honest feedback.
 
-#### **Partnership is force multiplier**
+#### Partnership is force multiplier
 I could not have done this research without my backend engineer extracting JSON into workable CSV format. That collaboration—data expertise + research/design expertise—made the research possible and credible to stakeholders.
 
-#### **Mental models reveal priorities**
+#### Mental models reveal priorities
 The mapping activity fit real data validation, mental model discovery, *and* mockup feedback into an hour-long session. Each activity built on the previous one, so feedback was concrete and actionable, not abstract.
 
-#### **"Do not build" is a valid research outcome**
+#### "Do not build" is a valid research outcome
 Recommending *against* MOS implementation was only possible because I had data to back it up. By showing inaccurate data to veterans and documenting gaps, I could present the recommendation as "here's what we can ship safely now, here's what needs fixing first" rather than "this is a bad idea."
 
 ---
