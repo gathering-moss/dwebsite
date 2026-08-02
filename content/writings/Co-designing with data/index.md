@@ -83,7 +83,9 @@ Period of service type and character of discharge were added to the VA.gov Profi
 
 ### Metrics & results
 ☞ **Recs implemented**: Both recommended data elements were built and deployed
+<br>
 ☞ **Roadmap influenced**: VEO updated their roadmap based on findings, prioritizing efforts to improve data quality
+<br>
 ☞ **Veterans reached**: Millions of veterans now have access to more complete military service information in their profiles
 
 ### Key learnings
@@ -105,7 +107,7 @@ Recommending *against* MOS implementation was only possible because I had data t
 
 ---
 
-> [!info] View the real artifacts from this study
+## View the real artifacts from this study
 > **[Research questions & recruitment plan](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/Research/2024-01-military-info-enhancement-mvp/research-plan.md)**
 > This plan helped everyone on our team get on the same page and make sure that we were asking the right questions, and that we’d get actionable answers. I worked with Perigean, VA.gov’s recruitment partner, to recruit veterans as research participants.
 > 
