@@ -115,7 +115,7 @@ Recommending *against* MOS implementation was only possible because I had data t
 
 ---
 
-## View the real artifacts from this study
+## Artifacts from this study on GitHub
 > **[Research questions & recruitment plan](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/Research/2024-01-military-info-enhancement-mvp/research-plan.md)**
 > This plan helped everyone on our team get on the same page and make sure that we were asking the right questions, and that we’d get actionable answers. I worked with Perigean, VA.gov’s recruitment partner, to recruit veterans as research participants.
 > 
