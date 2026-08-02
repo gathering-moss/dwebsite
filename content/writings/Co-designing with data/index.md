@@ -1,6 +1,6 @@
 +++
-title = "Co-designing with data"
-description = "From ambiguous data to clear direction."
+title = "Turning ambiguous data into clear direction"
+description = "Co-designing with veterans, not for them."
 date = 2026-03-12
 [taxonomies]
 tags = ["Research, Design"]
@@ -15,20 +15,22 @@ toc_ordered = true
 
 # From ambiguous data to clear direction
 
-## Context & Challenge
+## Context & challenge
 
-### The problem
-The VA had a hunch that surfacing military service history in veterans' profiles could help them connect their service to disability claims, but no one understood how this data would actually appear to veterans or what impact it would have. The team had access to the underlying data structure, but couldn't visualize what veterans would see, much less whether the data was even accurate or useful.
+### Problem
+Veterans Affairs (VA) had a hunch that surfacing military service history in veterans' profiles could help them connect their service to disability claims, but no one understood how this data would actually appear to veterans or what impact it would have. The team had access to the underlying data structure, but couldn't visualize what veterans would see, much less whether the data was even accurate or useful.
 
 ![Screenshot of a presentation slide that lists the research goals of this study: gain a better understanding of veterans’ mental models, review data with veterans, and gather feedback on design mockup.](static/goals.png)
 
-### The users
+### Users
 16 veterans across all six military branches (Air Force, Army, Coast Guard, Marine Corps, Navy, Space Force), with varying service lengths, ranks, and service types. All had filed disability claims. 50% had filed PACT Act claims; 50% had served overseas. Participants ranged from ages 25–65+, with diverse education levels and geographic locations (5 urban, 11 rural).
-### The constraints
+
+### Constraints
 - **Data quality unknown**: No one had validated VADIR (VA/DoD Identity Repository) data against veteran experience
 - **Stakeholder uncertainty**: VEO and the Profile team couldn't decide which data elements were safe and useful to display without veteran input
 - **Emotional stakes**: Veterans' military records impact their ability to access healthcare and disability benefits – data has consequences
-## Research Process
+
+## Research process
 
 I conducted 16 semi-structured interviews with veterans, walked through their actual production data to validate accuracy, and used a mental model mapping activity to understand their priorities. 
 
@@ -44,7 +46,8 @@ Rather than showing wireframes, I partnered with our backend engineer to pull re
 - **Veterans already have workarounds**: Veterans already use their DD214s, branch-specific records, and their own documentation to file claims.
 
 Fortunately, **safe data did exist**: Branch of service, period of service type (active/reserves), and character of discharge were accurate for 13–15 of 15 veterans and genuinely useful.
-## Design Process
+
+## Design process
 
 ### Research-informed design direction
 Rather than pursuing the original MVP scope (MOS + dates + duty status), I recommended a **data-quality-first approach**: only surface data elements that are accurate *and* useful.
@@ -54,11 +57,13 @@ Rather than pursuing the original MVP scope (MOS + dates + duty status), I recom
 - **Monitor for future**: Deployment locations - veterans desperately want this, but data quality isn't there yet; recommend VEO prioritize DoD data improvements
 
 I presented this not as "data is broken" but as "here's what we can safely ship now, here's what needs DoD partnership to fix, and here's why veterans care about each piece."
+
 ### Solution validation
 Validation happened in real time during research sessions. Veterans validated their own data, articulated their priorities, *then* evaluated a mockup against those priorities. This meant feedback was grounded in their actual needs, not abstract preferences.
 
 ![Screenshot of a presentation slide depicting two design mock-ups side by side. The First is Military Information in a veteran user’s profile with a button to “see details”. The second is the details expanded.](static/mockup.png)
-## Final Design
+
+## Final design
 
 ### Design solutions
 Period of service type (active duty, reserves, etc.) and character of discharge were added to the VA.gov Profile military information section, displaying alongside branch of service and service dates.
@@ -74,19 +79,22 @@ Period of service type (active duty, reserves, etc.) and character of discharge 
 - Veterans already have better sources (DD214, branch-specific records).
 
 By showing inaccurate data *to the veterans it belonged to*, stakeholders immediately understood the stakes. One veteran saw discharge information that contradicted their DD214—information they'd been fighting for years to correct. That emotional understanding led to concrete action: VEO updated their roadmap to prioritize DoD data quality improvements, and the team shipped only the data elements they could confidently stand behind.
+
 ### Accessibility & inclusive design
 Trauma-informed facilitation prioritized veterans' interpretation of their own data and made clear that confusing or inaccurate information was a *system problem*, not their misunderstanding—essential when data represents lived experience and directly impacts access to healthcare and benefits.
-## Impact & Outcomes
+
+## Impact & outcomes
 
 ### What shipped
 Period of service type and character of discharge were added to the VA.gov Profile military information section. All veterans with authenticated VA.gov Profile accounts can now see this information—millions of veterans. Implementation occurred approximately summer 2024, a few months after research concluded in March 2024.
 
 ### Metrics & results
-☞ **Recs implemented**: Both recommended data elements were built and deployed
-<br>
-☞ **Roadmap influenced**: VEO updated their roadmap based on findings, prioritizing efforts to improve data quality
-<br>
-☞ **Veterans reached**: Millions of veterans now have access to more complete military service information in their profiles
+#### ☞ Recs implemented 
+Both recommended data elements were built and deployed
+#### ☞ Roadmap influenced
+VEO updated their roadmap based on findings, prioritizing efforts to improve data quality
+#### ☞ Veterans reached
+Millions of veterans now have access to more complete military service information in their profiles
 
 ### Key learnings
 
@@ -94,7 +102,7 @@ Period of service type and character of discharge were added to the VA.gov Profi
 Pulling actual production data and having veterans validate it revealed problems no amount of wireframe testing could have surfaced. One veteran's inaccurate discharge information made the stakes visceral for stakeholders.
 
 #### Trauma-informed research is essential
-Several veterans found it traumatizing to see inaccurate information about their own service—especially those whose military careers were cut short by injury. Adjusting facilitation to prioritize their interpretation wasn't just ethical; it was necessary to maintain trust and get honest feedback.
+Several veterans found it traumatizing to see inaccurate information about their own service—especially those whose military careers were cut short by injury. Adjusting facilitation to prioritize their interpretation was necessary to   get honest feedback and maintain trust.
 
 #### Partnership is force multiplier
 I could not have done this research without my backend engineer extracting JSON into workable CSV format. That collaboration—data expertise + research/design expertise—made the research possible and credible to stakeholders.
